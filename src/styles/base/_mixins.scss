@@ -1,0 +1,31 @@
+@import 'base/variables';
+
+@function font-path($path) {
+  @return '#{$fonts-path}/#{$path}';
+}
+
+@function image-path($path) {
+  @return '#{$images-path}/#{$path}';
+}
+
+@function font-url($path) {
+  @return url(font-path($path));
+}
+
+@function image-url($path) {
+  @return url(image-path($path));
+}
+
+@mixin font-face($family, $path, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: $family;
+    font-weight: $weight;
+    font-style:  $style;
+    src: font-url('#{$path}.eot#iefix') format('embedded-opentype'),
+         font-url('#{$path}.woff2') format('woff2'),
+         font-url('#{$path}.woff') format('woff'),
+         font-url('#{$path}.ttf') format('truetype'),
+         font-url('#{$path}.otf') format('opentype'),
+         font-url('#{$path}.svg#font') format('svg');
+  }
+}
