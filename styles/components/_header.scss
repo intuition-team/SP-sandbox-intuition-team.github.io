@@ -10,11 +10,14 @@ nav {
 
   .logo-container {
     display: block;
-    width: 1.25em;
+    width: 10em;
   }
   a.logo-container {
     &:hover {
       filter: brightness(120%);
+    }
+    .logo-search{
+      max-width: 5em;
     }
   }
 
