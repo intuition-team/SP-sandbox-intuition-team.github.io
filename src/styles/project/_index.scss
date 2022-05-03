@@ -1,0 +1,54 @@
+.main-page-cover {
+  min-height: 30em;
+  padding: 1em;
+  position: relative;
+  border-radius: 0.3em;
+}
+
+.shift-up {
+  margin-top: -17em;
+}
+
+// .plyr-player-box {
+//   border-radius: 0.7em;
+//   overflow: hidden;
+
+//   .plyr {
+//     --plyr-color-main: #0099ff;
+//     transform: scale(1.01);
+
+//     button {
+//       background-color: #202020;
+//       color: rgba(var(--ids__background-RGB), 1);
+//     }
+//   }
+// }
+
+// .video-wrapper {
+//   display: flex;
+//   iframe {
+//     min-width: 52em;
+//     height: 31.25em;
+//     border: 0.1px solid rgb(217, 2, 23);
+//     border-radius: 1.5em;
+//   }
+// }
+
+#main_about {
+  max-width: 52em;
+}
+
+.vacancies-pagination {
+  margin-top: 2em;
+  a {
+    color: black;
+    margin-right: 0.5em;
+    font-size: 0.8em;
+    padding: 0.09em 0.1em;
+    border: 1px solid transparent;
+    &:hover {
+      border: 1px solid red;
+      border-radius: 0.2em;
+    }
+  }
+}

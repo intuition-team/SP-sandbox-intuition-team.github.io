@@ -1,0 +1,46 @@
+extends /layouts/main.pug
+
+block meta
+  +meta(title="Brand-book", description="Snoonu", og-image="/images/IMG_0202.jpg")
+
+
+block content       
+    .ids__wrapper.ids__full-width 
+        .main-page-cover.in-red
+            section.brand-book
+                figure
+                    img(src="/images/snoonu-logo.svg", alt="Snoonu logo")   
+                nav     
+                    .nav-item
+                        a.js-scroll-link.ids__hover-RGB(href="#brand") Brand
+                    .nav-item
+                        a.js-scroll-link(href="#identity") Identity
+                    .nav-item
+                        a.js-scroll-link(href="#communication-guides") Communication guides
+                    .nav-item
+                        a.js-scroll-link(href="#design-system") Design System
+    .ids__wrapper
+        section#brand 
+            h2 Brand
+            h3 Mission 
+            p Our mission is simply to transform how we live by connecting people with a technology that equips them with endless possibilities, to surpass norms and uplift communities, to create opportunities and to do it proudly. We welcome talents, entrepreneurs and creative minds to join us in this journey of becoming Qatar's first Unicorn.
+            h3 Values 
+            p some text
+            figure 
+                img(src="", alt="we coach")
+            figure 
+                img(src="", alt="we listen")
+            figure 
+                img(src="", alt="we act")
+            p text transform
+            h3 Audience 
+            p some text
+    .ids__wrapper
+        section#identity
+            h2 Identity 
+    .ids__wrapper
+        section#communication-guides
+            h2 Communication Guides
+    .ids__wrapper
+        section#design-system
+            h2 Design System

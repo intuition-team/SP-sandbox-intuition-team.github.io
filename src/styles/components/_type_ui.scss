@@ -1,0 +1,35 @@
+.ids {
+  h1 {
+    font-size: 6em;
+    line-height: 0.85;
+    font-weight: 400;
+    letter-spacing: -0.015em;
+  }
+
+  h2 {
+    font-size: 4em;
+    line-height: 1;
+    margin-bottom: 0.2em;
+    color: rgba(var(--ids__accent-RGB), 1);
+    font-weight: 400;
+  }
+
+  button {
+    &:hover {
+      background-color: rgba(var(--ids__hover-RGB), 1);
+    }
+  }
+
+  a {
+    transition: color 0.8s ease, background-color 0.8s ease,
+      border-color 0.8s ease;
+
+    &:hover {
+      transition: color 0s ease, background-color 0s ease, border-color 0s ease;
+    }
+  }
+
+  p.lead {
+    font-size: 1.5em;
+  }
+}

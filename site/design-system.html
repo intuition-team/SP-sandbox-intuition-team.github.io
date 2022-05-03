@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Layer 0</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,viewport-fit=contain"/>
+    <meta name="description" content=":—)"/>
+    <meta name="author" content="Layer 0"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name"/>
+    <meta property="og:title" content="Layer 0"/>
+    <meta property="og:description" content=":—)"/>
+    <meta property="og:url" content="https://github.com/intuition-team/layer-0/design-system"/>
+    <meta property="og:image" content="https://github.com/intuition-team/layer-0/images/poster.jpg"/>
+    <meta property="og:image:type" content="image/jpg"/>
+    <meta property="og:image:width" content="2000"/>
+    <meta property="og:image:height" content="1145"/>
+    <meta property="og:image:alt" content="Layer 0"/>
+    <meta name="twitter:title" content="Layer 0"/>
+    <meta name="twitter:description" content=":—)"/>
+    <meta name="twitter:url" content="https://github.com/intuition-team/layer-0/design-system"/>
+    <link rel="stylesheet" href="/assets/main.cdca31bd.css">
+    <link rel="icon" href="/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&amp;display=swap" rel="stylesheet">
+  </head>
+  <body class="ids">
+    <header>
+      <nav>
+        <div class="nav-item"><a class="logo-container" href="/"><img src="/images/snoonu-logo.svg" alt="Snoonu logo"></a>
+        </div>
+        <div class="nav-item"><a class="js-scroll-link ids__hover-RGB" href="#main_about">About Snoonu</a></div>
+        <div class="nav-item"><a class="js-scroll-link" href="#main_work">Work with us</a></div>
+        <div class="nav-item"><a class="js-scroll-link" href="#vacancies">Vacancies</a></div>
+      </nav>
+      <nav> 
+        <div class="nav-item"><a class="js-scroll-link" href="#doha">📌 Doha, Qatar</a></div>
+      </nav>
+    </header>
+    <main>
+      <div class="ids__wrapper tmp-with-sidebar">
+        <section><a href="/">← Куда-то</a>
+          <div class="ids__stack XS"></div>
+          <h2 id="variables">Переменные</h2>
+          <p>IDS позволяет настроить цветовую палитру и основные параметры типографики через css-переменные. </p>
+        </section>
+        <section>
+          <h3 id="typography">Типографика</h3>
+          <p><code>--ids__font</code> — шрифт, по-умолчанию PT Root в начертаниях Regular, Medium и Bold.</p>
+          <p><code>--ids__density</code> — коэффициент плотности вёрстки.</p>
+          <p>Размеры шрифта увеличиваются в заданных диапазонах на заданных ширинах экрана. По умолчанию это от 16 до 20 пикселей на компьютерах при ширине от 1000 до 1600 пикселей и нескалируемые 17 пикселей на телефонах при ширине от 320 до 768 пикселей.</p>
+          <p>Заголовки увеличиваются умножением на коэффициент размерной сетки. Например, изначальное состояние 20px, коэффициент 1.5. Значит, следующий заголовок будет 30px. Следующий 45px.</p>
+          <p>Основано на <a href="https://utopia.fyi/calculator">Утопии</a>.</p>
+          <h4>Диапазоны</h4>
+          <ul>
+            <li> <code>--type-scale-desktop</code>— коэффициент размерной сетки на компьютерах</li>
+            <li> <code>--font-size-min</code>— минимальный размер шрифта на компьютерах</li>
+            <li> <code>--font-size-max</code>— максимальный размер шрифта на компьютерах</li>
+            <li> <code>--type-scale-mobile</code>— коэффициент размерной сетки на телефонах</li>
+            <li> <code>--font-size-min-mobile</code>— размер шрифта мин телефон</li>
+            <li> <code>--font-size-max-mobile</code>— размер шрифта макс телефон</li>
+          </ul>
+          <h4>Размеры шрифта</h4>
+          <p>Получаются путём умножения <code>--step-0</code> на коэффициент размерной сетки <code>--type-scale-desktop</code> или <code>--type-scale-mobile</code></p>
+          <ul>
+            <li><code>--step-0</code>— <code>h4</code>, <code>p</code>. базовый шрифт, переменная с размером шрифта</li>
+            <li><code>--step-1</code>— h3</li>
+            <li><code>--step-2</code>— h2</li>
+            <li><code>--step-3</code>— h1</li>
+          </ul>
+        </section>
+        <section>
+          <h3 id="color">Цвет</h3>
+          <p>Цвета хранятся в виде трёх чисел RGB. Это позволяет гибко настраивать прозрачность.</p>
+          <aside><code>
+              <pre>
+                <p>--ids__text-RGB: 5, 5, 5;</p>
+                <p>color: rgba(var(--ids__text-RGB), 0.7);</p></pre></code></aside>
+          <p>Чтобы задавать цвета css-переменными, используется css-функция <code>RGB()</code> (капсом) вместо sass-функции <code>rgb()</code>:</p>
+          <aside><code>color: RGB(var(--ids__text-RGB));</code></aside>
+          <h4>Основные</h4>
+          <ul>
+            <li>
+              <div class="tmp-color-sample" style="background-color: rgb(var(--ids__text-RGB));"></div><code>--ids__text-RGB</code>— цвет текста
+            </li>
+            <li>
+              <div class="tmp-color-sample" style="background-color: rgb(var(--ids__link-RGB));"></div><code>--ids__link-RGB</code>— цвет ссылки
+            </li>
+            <li>
+              <div class="tmp-color-sample" style="background-color: rgb(var(--ids__hover-RGB));"></div><code>--ids__hover-RGB</code>— цвет подсветки активных элементов при наведении курсора
+            </li>
+            <li>
+              <div class="tmp-color-sample" style="background-color: rgb(var(--ids__accent-RGB));"></div><code>--ids__accent-RGB</code>— цвет для кнопок и других кликабельных или активных элементов; отличается от цвета бренда, чтобы оставаться заметным среди брендовых иллюстраций
+            </li>
+            <li>
+              <div class="tmp-color-sample" style="background-color: rgb(var(--ids__surface-RGB));"></div><code>--ids__surface-RGB</code>— цвет для плашей, текстовых полей и других «поверхностей», лежащих «в другом визуальном слое»
+            </li>
+          </ul>
+          <h4>Дополнительные</h4>
+          <ul>
+            <li>
+              <div class="tmp-color-sample with-stroke" style="background-color: rgb(var(--ids__background-RGB));"></div><code>--ids__background-RGB</code>— цвет фона
+            </li>
+            <li>
+              <div class="tmp-color-sample" style="background-color: rgb(var(--ids__main-RGB));"></div><code>--ids__main-RGB</code>— узнаваемый цвет бренда; по умолчанию наследует <code>--ids__accent-RGB</code>
+            </li>
+            <li>
+              <div class="tmp-color-sample" style="background-color: rgb(var(--ids__code-RGB));"></div><code>--ids__code-RGB</code>— цвет для выделения кода
+            </li>
+            <li>
+              <div class="tmp-color-sample" style="background-color: rgb(var(--ids__error-RGB));"></div><code>--ids__error-RGB</code>— цвет для сообщений об ошибках
+            </li>
+            <li>
+              <div class="tmp-color-sample" style="background-color: rgb(var(--ids__success-RGB));"></div><code>--ids__success-RGB</code>— цвет для сообщений об успешном выполнении
+            </li>
+            <li>
+              <div class="tmp-color-sample" style="background-color: rgb(var(--ids__outline-RGB));"></div><code>--ids__outline-RGB</code>— цвет обводки для элементов в фокусе; по умолчанию наследует <code>--ids__surface-RGB</code>
+            </li>
+          </ul>
+          <h4>Для тёмных тем</h4>
+          <ul>
+            <li>
+              <div class="tmp-color-sample with-stroke" style="background-color: rgb(var(--ids__on-accent-RGB));"></div><code>--ids__on-accent-RGB</code>— цвет текста на фоне цвета accent; по умолчанию наследует <code>--ids__background-RGB</code>
+            </li>
+            <li>
+              <div class="tmp-color-sample with-stroke" style="background-color: rgb(var(--ids__on-main-RGB));"></div><code>--ids__on-main-RGB</code>— цвет текста на фоне цвета main; по умолчанию наследует <code>--ids__background-RGB</code>
+            </li>
+            <li>
+              <div class="tmp-color-sample" style="background-color: rgb(var(--ids__on-surface-RGB));"></div><code>--ids__on-surface-RGB</code>— цвет текста на фоне цвета surface; по умолчанию наследует <code>--ids__text-RGB</code>
+            </li>
+          </ul>
+          <p>Полный список переменных:</p>
+          <aside>
+            <pre>
+              <p>:root {</p>
+              <p>  --ids__font: 'Root Ui', Arial, sans-serif;</p>
+              <p>  --ids__density: 1.3;</p>
+              <p> </p>
+              <p>  --type-scale-desktop: 1.5; //коэффициент увеличения шрифта десктоп</p>
+              <p>  --font-size-min: 16; //размер шрифта мин десктоп</p>
+              <p>  --font-size-max: 20; //размер шрифта макс десктоп</p>
+              <p> </p>
+              <p>  --type-scale-mobile: 1.333; //коэффициент увеличения шрифта телефон</p>
+              <p>  --font-size-min-mobile: 17; //размер шрифта мин телефон</p>
+              <p>  --font-size-max-mobile: 17; //размер шрифта макс телефон</p>
+              <p> </p>
+              <p>  //цвета</p>
+              <p>  --ids__background-RGB: 255, 255, 255;</p>
+              <p>  --ids__text-RGB: 5, 5, 5;</p>
+              <p>  --ids__accent-RGB: 0, 0, 0;</p>
+              <p>  --ids__main-RGB: var(--ids__accent-RGB);</p>
+              <p>  --ids__surface-RGB: 245, 245, 245;</p>
+              <p>  --ids__error-RGB: 240, 84, 95;</p>
+              <p>  --ids__success-RGB: 84, 180, 140;</p>
+              <p>  --ids__mark-RGB: 255, 248, 128;</p>
+              <p>  --ids__code-RGB: 200, 0, 0;</p>
+              <p> </p>
+              <p>  --ids__on-main-RGB: var(--ids__background-RGB);</p>
+              <p>  --ids__on-accent-RGB: var(--ids__background-RGB);</p>
+              <p>  --ids__on-surface-RGB: var(--ids__text-RGB);</p>
+              <p> </p>
+              <p>  --ids__link-RGB: 0, 100, 240;</p>
+              <p>  --ids__hover-RGB: 0, 220, 0;</p>
+              <p>  --ids__outline-RGB: var(--ids__surface-RGB);</p>
+              <p>}</p></pre>
+          </aside>
+        </section>
+        <section>
+          <h2 id="components">Компоненты </h2>
+        </section>
+        <section>
+          <div class="ids__stack XS"></div>
+          <h6 class="tmp-section-title" id="headers">Заголовки</h6>
+          <div class="tmp-left-sidebar"><code>&lt;h1&gt;</code></div>
+          <h1>Полюбить свои цифры</h1>
+          <div class="ids__stack XS"></div>
+          <div class="tmp-left-sidebar"><code>&lt;h2&gt;</code></div>
+          <h2>Привычки скучных людей</h2>
+          <div class="ids__stack XS"></div>
+          <div class="tmp-left-sidebar"><code>&lt;h3&gt;</code></div>
+          <h3>Считать деньги с удовольствием</h3>
+          <div class="ids__stack XS"></div>
+          <div class="tmp-left-sidebar"><code>&lt;h4&gt;</code></div>
+          <h4>Раскладывать по полочкам и заработать на квартиру</h4>
+          <div class="ids__stack XS"></div>
+          <div class="tmp-left-sidebar"><code>&lt;h5&gt;</code></div>
+          <h5>Радовать себя и сделать ремонт</h5>
+          <div class="ids__stack XS"></div>
+          <div class="tmp-left-sidebar"><code>&lt;h6&gt;</code></div>
+          <h6>Получать кэшбек и развлекаться</h6>
+        </section>
+        <section>
+          <div class="ids__stack XS"></div>
+          <h6 class="tmp-section-title" id="editorial">Редакционные форматы</h6>
+          <div class="tmp-left-sidebar"><code>&lt;p&gt;</code></div>
+          <p>Винвестор работает с октября 2018 года. За это время мы успели разработать транзакционную платформу и провести десятки рыночных исследований. В команде около 40 человек: программисты, специалисты по безопасности, профессиональные брокеры и инвесторы, менеджеры, дизайнеры, редакторы и аналитики.</p>
+          <div class="ids__stack XS"></div>
+          <div class="tmp-left-sidebar"><code>p.ids__lead</code></div>
+          <div class="ids__lead">В команде около 40 человек: программисты, специалисты по безопасности, профессиональные брокеры и инвесторы, менеджеры, дизайнеры, редакторы и аналитики. У нас два офиса — в Москве и Ростове-на-Дону.</div>
+        </section>
+        <section>
+          <div class="ids__stack XS"></div>
+          <div class="tmp-left-sidebar"><code>&lt;h2&gt;&lt;mark&gt;&lt;/h2&gt;</code></div>
+          <h2>Сколько может длиться <mark>финансовый кризис</mark></h2>
+          <div class="ids__stack XS"></div>
+          <div class="tmp-left-sidebar"><code>&lt;p&gt;&lt;mark&gt;&lt;/p&gt;</code></div>
+          <p>Вовсе не обязательно использовать все финансовые привычки сразу — они неплохо работают и по отдельности. Более того, финансовые привычки могут прижиться у людей <mark>любого возраста и с любым уровнем дохода</mark>, и тоже будут отлично работать.</p>
+          <div class="ids__stack XS"></div>
+          <div class="tmp-left-sidebar"><code>&lt;blockquote&gt;</code></div>
+          <blockquote>Основной принцип финансовой независимости — тратить меньше, чем зарабатываешь и инвестировать разницу</blockquote>
+          <div class="ids__stack XS"></div>
+          <div class="tmp-left-sidebar"><code>&lt;ol&gt;</code></div>
+          <ol>
+            <li>Пункт номер 1</li>
+            <li>Пункт номер 2</li>
+            <li>Пункт номер 3</li>
+          </ol>
+          <div class="ids__stack XS"></div>
+          <div class="tmp-left-sidebar"><code>&lt;ul&gt;</code></div>
+          <ul>
+            <li>Пункт номер 1</li>
+            <li>Пункт номер 2</li>
+            <li>Пункт номер 3</li>
+          </ul>
+          <div class="ids__stack XS"></div>
+          <div class="tmp-left-sidebar"><code>&lt;ul.checked&gt;</code></div>
+          <ul class="checked">
+            <li>Пункт номер 1</li>
+            <li>Пункт номер 2</li>
+            <li>Пункт номер 3</li>
+          </ul>
+          <div class="ids__stack XS"></div>
+          <div class="tmp-left-sidebar"><code>.ids__label</code></div>
+          <div class="ids__label">Привычка №1</div>
+          <div class="ids__stack XS"></div>
+          <div class="tmp-left-sidebar"><code>.ids__label-outline</code></div>
+          <div class="ids__label ids__label-outline">Просто прелестно</div>
+          <div class="ids__stack XS"></div>
+          <div class="tmp-left-sidebar"><code>&lt;details&gt;</code></div>
+          <details>
+            <summary>Винвестор работает с октября 2018 года</summary>
+            <div class="ids__stack XS"></div>
+            <p>За это время мы успели разработать транзакционную платформу и провести десятки рыночных исследований. В команде около 40 человек: программисты, специалисты по безопасности, профессиональные брокеры и инвесторы, менеджеры, дизайнеры, редакторы и аналитики. У нас два офиса — в Москве и Ростове-на-Дону.</p>
+          </details>
+          <div class="ids__stack XS"></div>
+          <div class="tmp-left-sidebar"><code>&lt;aside&gt;</code></div>
+          <aside>
+            <p>Винвестор работает с октября 2018 года. За это время мы успели разработать транзакционную платформу и провести десятки рыночных исследований. В команде около 40 человек: программисты, специалисты по безопасности, профессиональные брокеры и инвесторы, менеджеры, дизайнеры, редакторы и аналитики. У нас два офиса — в Москве и Ростове-на-Дону.</p>
+          </aside>
+        </section>
+        <section>
+          <div class="tmp-left-sidebar"><code>&lt;figure&gt;<br>&lt;img&gt;<br>&lt;/figure&gt;</code></div>
+          <figure><img src="https://images.unsplash.com/photo-1628583768483-a762d81fa84c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=2779&amp;q=80"></figure>
+          <div class="ids__stack XS"></div>
+          <div class="tmp-left-sidebar"><code>&lt;figcaption&gt;</code></div>
+          <figure>
+            <figcaption>Mystical scene of a cabin on a hill. ©Julian Steenbergen</figcaption>
+          </figure>
+          <div class="ids__stack XS"></div>
+          <p>Иллюстрация с подписью:</p>
+          <div class="tmp-left-sidebar"><code>&lt;figure&gt;<br>&lt;img&gt;&lt;figcaption&gt;<br>&lt;/figure&gt;</code></div>
+          <figure><img src="https://images.unsplash.com/photo-1628583768483-a762d81fa84c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=2779&amp;q=80">
+            <figcaption>Mystical scene of a cabin on a hill. ©Julian Steenbergen</figcaption>
+          </figure>
+        </section>
+        <section>
+          <p>Модификаторы</p>
+          <div class="tmp-left-sidebar"><code>.XXS</code></div>
+          <figure class="XXS"><img src="https://images.unsplash.com/photo-1628583768483-a762d81fa84c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=2779&amp;q=80"></figure>
+          <div class="tmp-left-sidebar"><code>.XS</code></div>
+          <figure class="XS"><img src="https://images.unsplash.com/photo-1628583768483-a762d81fa84c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=2779&amp;q=80"></figure>
+          <div class="tmp-left-sidebar"><code>.S</code></div>
+          <figure class="S"><img src="https://images.unsplash.com/photo-1628583768483-a762d81fa84c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=2779&amp;q=80"></figure>
+        </section>
+        <section>
+          <div class="ids__stack S"></div>
+          <h6 class="tmp-section-title" id="spacing">Отступы</h6>
+          <div class="ids__stack XS"></div>
+          <div class="tmp-left-sidebar"><code>.ids__stack.XS</code></div>
+          <div class="ids__stack XS tmp-colorized-space"></div>
+          <div class="ids__stack XS"></div>
+          <div class="tmp-left-sidebar"><code>.ids__stack.S</code></div>
+          <div class="ids__stack S tmp-colorized-space"></div>
+          <div class="ids__stack XS"></div>
+          <div class="tmp-left-sidebar"><code>.ids__stack.M</code></div>
+          <div class="ids__stack M tmp-colorized-space"></div>
+          <div class="ids__stack XS"></div>
+          <div class="tmp-left-sidebar"><code>.ids__stack.L</code></div>
+          <div class="ids__stack L tmp-colorized-space"></div>
+          <div class="ids__stack XS"></div>
+          <div class="tmp-left-sidebar"><code>.ids__stack.XL</code></div>
+          <div class="ids__stack XL tmp-colorized-space"></div>
+        </section>
+        <section>
+          <div class="ids__stack S"></div>
+          <h6 class="tmp-section-title" id="ui">Элементы интерфейса</h6>
+          <div class="ids__stack XS"></div>
+          <div class="tmp-left-sidebar"><code>&lt;button&gt;</code></div>
+          <button>Отправить</button>
+          <div class="ids__stack XS"></div>
+          <p>Модификаторы:</p>
+          <div class="tmp-left-sidebar"><code>button.XS</code></div>
+          <button class="XS">Отправить</button>
+          <div class="ids__stack XS"></div>
+          <div class="tmp-left-sidebar"><code>button.S</code></div>
+          <button class="S">Отправить</button>
+          <div class="ids__stack XS"></div>
+          <div class="tmp-left-sidebar"><code>button.M</code></div>
+          <button class="M">Отправить</button>
+          <div class="ids__stack XS"></div>
+          <div class="tmp-left-sidebar"><code>button.L</code></div>
+          <button class="L">Отправить</button>
+          <div class="ids__stack XS"></div>
+          <div class="tmp-left-sidebar"><code>button.XL</code></div>
+          <button class="XL">Отправить</button>
+          <div class="ids__stack S"></div>
+          <div class="tmp-left-sidebar"><code>a.ids__button-link</code></div><a class="ids__button-link" href="/system.pug">Заполнить заявку</a>
+          <div class="ids__stack S"></div>
+          <div class="tmp-left-sidebar"><code>&lt;input type="text"&gt;</code></div>
+          <input type="text" placeholder="Например, ">
+          <div class="ids__stack XS"></div>
+          <div class="tmp-left-sidebar"><code>.ids__form-error-message</code></div>
+          <div class="ids__form-error-message">Этот адрес уже используется. Если вы хотите купить книгу заново, нужен другой адрес, а если вы хотите войти, <a href="">войдите</a></div>
+          <div class="ids__stack XS"></div>
+          <div class="tmp-left-sidebar"><code>.ids__form-success-message</code></div>
+          <div class="ids__form-success-message">Мы отправили ссылку для входа — проверьте <a href="">почту</a>, пожалуйста</div>
+          <div class="ids__stack XS"></div>
+          <p>Модификаторы:</p>
+          <div class="tmp-left-sidebar"><code>input.XS(type='text')</code></div>
+          <input class="XS" type="text" placeholder="Например, ">
+          <div class="ids__stack XS"></div>
+          <div class="tmp-left-sidebar"><code>input.S(type='text')</code></div>
+          <input class="S" type="text" placeholder="Например, ">
+          <div class="ids__stack XS"></div>
+          <div class="tmp-left-sidebar"><code>input.M(type='text')</code></div>
+          <input class="M" type="text" placeholder="Например, ">
+          <div class="ids__stack XS"></div>
+          <div class="tmp-left-sidebar"><code>input.L(type='text')</code></div>
+          <input class="L" type="text" placeholder="Например, ">
+          <div class="ids__stack XS"></div>
+          <div class="tmp-left-sidebar"><code>input.XL(type='text')</code></div>
+          <input class="XL" type="text" placeholder="Например, ">
+          <div class="ids__stack S"></div>
+          <div class="tmp-left-sidebar"><code>.ids__input-text-line</code></div>
+          <input class="ids__input-text-line" type="text" placeholder="Например, ">
+          <div class="ids__stack S"></div>
+          <div class="tmp-left-sidebar"><code>&lt;textarea&gt;</code></div>
+          <textarea placeholder="Например, "></textarea>
+          <div class="ids__stack S"></div>
+          <div class="tmp-left-sidebar"><code>.ids__select</code></div>
+          <div class="ids__select">
+            <select>
+              <option>Кошки</option>
+              <option>Собаки</option>
+              <option>Лягушки</option>
+              <option>Кроты</option>
+              <option>Хомяки</option>
+              <option>Баклажаны</option>
+            </select>
+          </div>
+          <div class="ids__stack S"></div>
+          <div class="tmp-left-sidebar"><code>.ids__checkbox</code></div>
+          <div class="ids__checkbox">
+            <input type="checkbox" id="checkbox-sample">
+            <label for="checkbox-sample">Согласен, что данные обработаются</label>
+          </div>
+          <div class="ids__stack S"></div>
+          <div class="tmp-left-sidebar"><code>.ids__radio</code></div>
+          <div class="ids__radio">
+            <input type="radio" id="radio-sample-1" name="radio-sample">
+            <label for="radio-sample-1">Приобрести ПИФ</label><br>
+            <input type="radio" id="radio-sample-2" name="radio-sample">
+            <label for="radio-sample-2">Купить обликацию</label><br>
+            <input type="radio" id="radio-sample-3" name="radio-sample">
+            <label for="radio-sample-3">Копить деньги и ждать</label>
+          </div>
+          <div class="ids__stack S"></div>
+          <div class="tmp-left-sidebar"><code>.ids__radiogroup-toggle</code></div>
+          <div class="ids__radiogroup-toggle">
+            <div class="ids__radiogroup-option">
+              <input type="radio" id="option1" name="radio-toggle-sample" checked>
+              <label for="option1">Облигация</label>
+            </div>
+            <div class="ids__radiogroup-option">
+              <input type="radio" id="option2" name="radio-toggle-sample">
+              <label for="option2">Акция</label>
+            </div>
+            <div class="ids__radiogroup-option">
+              <input type="radio" id="option3" name="radio-toggle-sample">
+              <label for="option3">ПИФ</label>
+            </div>
+            <div class="ids__radiogroup-option">
+              <input type="radio" id="option4" name="radio-toggle-sample">
+              <label for="option4">Вклад</label>
+            </div>
+          </div>
+          <div class="ids__stack S"></div>
+          <div class="tmp-left-sidebar"><code>.ids__radiogroup-toggle.monochrome</code></div>
+          <div class="ids__radiogroup-toggle monochrome">
+            <div class="ids__radiogroup-option">
+              <input type="radio" id="option01" name="radio-toggle-mono-sample" checked>
+              <label for="option01">Облигация</label>
+            </div>
+            <div class="ids__radiogroup-option">
+              <input type="radio" id="option02" name="radio-toggle-mono-sample">
+              <label for="option02">Акция</label>
+            </div>
+            <div class="ids__radiogroup-option">
+              <input type="radio" id="option03" name="radio-toggle-mono-sample">
+              <label for="option03">ПИФ</label>
+            </div>
+            <div class="ids__radiogroup-option">
+              <input type="radio" id="option04" name="radio-toggle-mono-sample">
+              <label for="option04">Вклад</label>
+            </div>
+          </div>
+          <div class="ids__stack S"></div>
+          <div class="tmp-left-sidebar"><code>&lt;table&gt;</code></div>
+          <table>
+            <tr> 
+              <th>Колонка1 </th>
+              <th>Колонка2</th>
+              <th>Колонка3 </th>
+            </tr>
+            <tr> 
+              <td>Колонка1</td>
+              <td>Колонка2</td>
+              <td>Колонка3</td>
+            </tr>
+            <tr> 
+              <td>Колонка1</td>
+              <td>Колонка2</td>
+              <td>Колонка3</td>
+            </tr>
+            <tr> 
+              <td>Колонка1</td>
+              <td>Колонка2</td>
+              <td>Колонка3</td>
+            </tr>
+          </table>
+        </section>
+        <section>
+          <div class="ids__stack S"></div>
+          <h6 class="tmp-section-title" id="grid">Сетка</h6>
+          <div class="ids__grid XXL ids__grid-inset-S">
+            <div class="tmp-left-sidebar"><code>.ids__grid.XXL</code></div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+          </div>
+          <div class="ids__grid XL ids__grid-inset-S">
+            <div class="tmp-left-sidebar"><code>.ids__grid.XL</code></div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+          </div>
+          <div class="ids__grid L ids__grid-inset-S">
+            <div class="tmp-left-sidebar"><code>.ids__grid.L</code></div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+          </div>
+          <div class="ids__grid M ids__grid-inset-S">
+            <div class="tmp-left-sidebar"><code>.ids__grid.M</code></div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+          </div>
+          <div class="ids__grid S ids__grid-inset-S">
+            <div class="tmp-left-sidebar"><code>.ids__grid.S</code></div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+          </div>
+          <div class="ids__grid XS ids__grid-inset-S">
+            <div class="tmp-left-sidebar"><code>.ids__grid.XS</code></div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+          </div>
+          <div class="ids__grid XXS ids__grid-inset-S">
+            <div class="tmp-left-sidebar"><code>.ids__grid.XXS</code></div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+          </div>
+          <div class="ids__stack S"></div>
+          <div class="ids__grid XXL">
+            <div class="tmp-left-sidebar"><code>.ids__grid</code></div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+          </div>
+          <div class="ids__grid XXL ids__grid-inset-S">
+            <div class="tmp-left-sidebar"><code>.ids__grid.ids__grid-inset-S</code></div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+          </div>
+          <div class="ids__grid XXL ids__grid-inset-M">
+            <div class="tmp-left-sidebar"><code>.ids__grid.ids__grid-inset-M</code></div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+          </div>
+          <div class="ids__grid XXL ids__grid-inset-L">
+            <div class="tmp-left-sidebar"><code>.ids__grid.ids__grid-inset-L</code></div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+            <div class="ids__grid-cell">
+              <div class="tmp-colorized-space surface">.ids__grid-cell</div>
+              <div class="ids__stack XS tmp-colorized-space surface"></div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="ids__stack L"></div>
+        </section>
+      </div>
+    </main>
+    <div class="footer in-red ids__wrapper ids__full-width">
+      <div class="link-and-logo">
+        <div class="links"><a href="tel:31112215">Call us </a><a href="#vacancies">Vacancies </a><a href="">Become a partner </a></div>
+        <div class="footer-logo"><a href="/"><img src="/images/snoonu-logo.svg" alt="Snoonu logo"></a>
+          <p>&#169; 2021-2022</p>
+        </div>
+      </div>
+      <div class="socials"> <a href="https://www.instagram.com/snoonu"><img src="/images/icon-instagram.svg" alt="instagram logo"></a><a href="https://www.facebook.com/snoonu.qa/"><img class="small" src="/images/icons-facebook.svg" alt="facebook logo"></a><a href="https://twitter.com/snoonu_qa"><img class="small" src="/images/icons-twitter.svg" alt="twitter logo"></a></div>
+    </div>
+    <script src="/assets/main.cdca31bd.js"></script>
+  </body>
+</html>
