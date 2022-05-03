@@ -1,29 +1,20 @@
 extends /layouts/main.pug
 
 block meta
-  +meta(title="Snoonu Sandbox", description="Snoonu HR website", og-image="")
+  +meta(title="Superpedestrian", description="Snoonu HR website", og-image="")
 
 block content
   
   .ids__wrapper.ids__full-width 
-    .main-page-cover.in-red
-      .vacancies-on-the-cover
-        .vacancies-box
-          p Hot vacancies:
-          include partials/vacancies.pug
-      //- img(src="/images/dowload-app-main.png", alt="snoonu app")
-
+    video(autoplay muted loop id="myVideo")
+      source(src="/images/video-background.mp4" type="video/mp4")
   .ids__wrapper.shift-up
-    h1.in-red Super work in a superapp!
-    #initializePlyr
-    .plyr-player-box
-      .plyr-player(data-plyr-provider="youtube" data-plyr-embed-id="UV-CmGVSQyw" poster="/images/hand-phone-city.JPG")
-    //- figure.video-wrapper
-      iframe(src="https://www.youtube.com/embed/UV-CmGVSQyw", frameborder="0", width="560" height="315" ) 
+    h1 Superpedestrian
+    
 
     section#main_about
       .ids__text
-        p.lead Snoonu is the fastest growing technology company in Qatar solving some of the country’s most challenging problems in logistics and lifestyle. We are dreamers, scientists, operators, and entrepreneurs.
+        a.lead Locations
         p Our culture is progressive, non-hierarchical, meritocratic, and collegial. We are looking for high achievers who will go above and beyond their job descriptions to fulfil a shared vision. If you are entrepreneurial, seek to change society with technology, and want to super-charge your career out of the regular 9 to 5, then Snoonu is the place for you.
         p One-stop application, facilitating online shopping, lifestyle, food, and grocery delivery, as well as dark stores and third-party logistics services for startups and SMEs in Qatar Snoonu is the first Qatari application that offers one-stop solutions to your daily needs, allowing you to buy or send any product anywhere you wish in Qatar. Snoonu makes life convenient and easy by letting customers tap and order instantly.
         p No time for Grocery Shopping? Need someone to deliver your documents? Household Shopping and delivery? Flowers and Chocolate for your loved ones? Even Personal Errands Service? Snoonu will do it all for you.

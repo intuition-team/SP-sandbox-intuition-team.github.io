@@ -4,6 +4,8 @@
     line-height: 0.85;
     font-weight: 400;
     letter-spacing: -0.015em;
+    color: rgba(var(--ids__accent-RGB), 1);
+
   }
 
   h2 {
@@ -29,7 +31,10 @@
     }
   }
 
-  p.lead {
-    font-size: 1.5em;
+  a.lead {
+    font-size: 1.1em;
+    padding: 0.1em 0.3em;
+    border:1px solid rgba(var(--ids__accent-RGB), 1);
+    border-radius: 4em;
   }
 }

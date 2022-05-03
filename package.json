@@ -24,11 +24,7 @@
     "stylelint": "stylelint \"src/**/*.scss\" --syntax scss",
     "prettier": "prettier \"src/**/*.{js,jsx,scss}\" --write"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
+  
   "lint-staged": {
     "*.{js,scss}": [
       "prettier --write",
