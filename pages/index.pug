@@ -1,0 +1,100 @@
+extends /layouts/main.pug
+
+block meta
+  +meta(title="Snoonu Sandbox", description="Snoonu HR website", og-image="")
+
+block content
+  
+  .ids__wrapper.ids__full-width 
+    .main-page-cover.in-red
+      .vacancies-on-the-cover
+        .vacancies-box
+          p Hot vacancies:
+          include partials/vacancies.pug
+      //- img(src="/images/dowload-app-main.png", alt="snoonu app")
+
+  .ids__wrapper.shift-up
+    h1.in-red Super work in a superapp!
+    #initializePlyr
+    .plyr-player-box
+      .plyr-player(data-plyr-provider="youtube" data-plyr-embed-id="UV-CmGVSQyw" poster="/images/hand-phone-city.JPG")
+    //- figure.video-wrapper
+      iframe(src="https://www.youtube.com/embed/UV-CmGVSQyw", frameborder="0", width="560" height="315" ) 
+
+    section#main_about
+      .ids__text
+        p.lead Snoonu is the fastest growing technology company in Qatar solving some of the country’s most challenging problems in logistics and lifestyle. We are dreamers, scientists, operators, and entrepreneurs.
+        p Our culture is progressive, non-hierarchical, meritocratic, and collegial. We are looking for high achievers who will go above and beyond their job descriptions to fulfil a shared vision. If you are entrepreneurial, seek to change society with technology, and want to super-charge your career out of the regular 9 to 5, then Snoonu is the place for you.
+        p One-stop application, facilitating online shopping, lifestyle, food, and grocery delivery, as well as dark stores and third-party logistics services for startups and SMEs in Qatar Snoonu is the first Qatari application that offers one-stop solutions to your daily needs, allowing you to buy or send any product anywhere you wish in Qatar. Snoonu makes life convenient and easy by letting customers tap and order instantly.
+        p No time for Grocery Shopping? Need someone to deliver your documents? Household Shopping and delivery? Flowers and Chocolate for your loved ones? Even Personal Errands Service? Snoonu will do it all for you.
+
+      .ids__stack.XS
+      .ids__grid.XL.ids__grid-inset-M
+        .ids__grid-cell
+          h3 Our mission
+          p Our mission is simply to transform how we live by connecting people with a technology that equips them with endless possibilities, to surpass norms and uplift communities, to create opportunities and to do it proudly. We welcome talents, entrepreneurs and creative minds to join us in this journey of becoming Qatar's first Unicorn.
+        .ids__grid-cell
+          h3 Our vision
+          p At Snoonu we believe that through technology anything is possible. Our vision is to be the first Qatari Super App that propels the region and its community through our innovative technology. We are leaders in the field with ambition in what we do and how we impact. We empower our team to create without limit and think BIG! At Snoonu we believe that everyone's contributions are important, we coach, we listen and we act. Our culture is boundless and equipped to hit the ground running at any given time.
+        .ids__grid-cell
+          h3 Our values
+          p We are thought leaders in all our actions. We constantly innovate and create solutions to bring lasting positive impact.We are honest, ethical and trustworthy in everything we do. We embrace and learn from mistakes, and bounce back stronger.
+
+    .ids__stack.XS
+    section#main_work
+      h2 Work with us!
+      .ids__text
+        p We are thought leaders in all our actions. We constantly innovate and create solutions to bring lasting positive impact.We are honest, ethical and trustworthy in everything we do. We embrace and learn from mistakes, and bounce back stronger.
+
+      .ids__stack.XS
+      .ids__grid.ids__grid-inset-L
+        .ids__grid-cell
+          h3 What we do
+          p Our mission is simply to transform how we live by connecting people with a technology that equips them with endless possibilities, to surpass norms and uplift communities, to create opportunities and to do it proudly. We welcome talents, entrepreneurs and creative minds to join us in this journey of becoming Qatar's first Unicorn.
+        .ids__grid-cell
+          h3 How we work
+          p At Snoonu we believe that through technology anything is possible. Our vision is to be the first Qatari Super App that propels the region and its community through our innovative technology. We are leaders in the field with ambition in what we do and how we impact. We empower our team to create without limit and think BIG! At Snoonu we believe that everyone's contributions are important, we coach, we listen and we act. Our culture is boundless and equipped to hit the ground running at any given time.        
+
+      .ids__text
+        div
+          h3 Why join us
+          p We are thought leaders in all our actions. We constantly innovate and create solutions to bring lasting positive impact.We are honest, ethical and trustworthy in everything we do. We embrace and learn from mistakes, and bounce back stronger.
+
+
+    .ids__stack.M
+    section#doha
+      h2 Doha, Qatar
+
+      .ids__text
+        p The city of Doha was formed seceding from another local settlement known as Al Bidda. The earliest documented mention of Al Bidda was made in 1681 by the Carmelite Convent, in an account which chronicles several settlements in Qatar. In the record, the ruler and a fort in the confines of Al Bidda are alluded to. Carsten Niebuhr, a German explorer who visited the Arabian Peninsula, created one of the first maps to depict the settlement in 1765 in which he labelled it as 'Guttur'.
+
+      .ids__stack.XS
+      figure
+        img(src="/images/hand-phone-city.JPG", alt="The hand holds the phone with the Snoonu app open in the background of Qatar")
+
+      .ids__stack.XS
+      .ids__text
+        p David Seaton, a British political resident in Muscat, wrote the first English record of Al Bidda in 1801. He refers to the town as 'Bedih' and describes the geography and defensive structures in the area. He stated that the town had recently been settled by the Sudan tribe (singular Al-Suwaidi), whom he considered to be pirates. Seaton attempted to bombard the town with his warship, but returned to Muscat upon finding that the waters were too shallow to position his warship within striking distance.
+
+
+    .ids__stack.M
+    section#vacancies
+      h2 Vacancies
+      .ids__text
+        p We are leaders in the field with ambition in what we do and how we impact. We believe that everyone's contributions are important. We empower our team to create without limit and think big. We embrace and learn from mistakes, and bounce back stronger. We coach, we listen, we act.       
+        .vacancies-pagination
+          a(href="#") All 
+          a(href="#") Marketing
+          a(href="#") Administration
+          a(href="#") Partnerships
+          a(href="#") HR
+          a(href="#") Business Intelligence
+          a(href="#") Technology
+          a(href="#") Operations
+      .ids__stack.XS
+      .ids__text
+        include partials/vacancies.pug
+
+        
+
+        

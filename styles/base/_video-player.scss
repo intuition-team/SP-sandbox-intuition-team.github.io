@@ -1,0 +1,52 @@
+@import "node_modules/plyr/dist/plyr";
+
+.plyr__poster {
+  background-size: cover !important;
+}
+
+.plyr__video-embed iframe {
+  top: -50%;
+  height: 200%;
+}
+
+.plyr-player-box {
+  border-radius: 0.6em;
+  overflow: hidden;
+
+  .plyr {
+    --plyr-color-main: rgba(var(--ids__accent-RGB), 1);
+    // transform: scale(1.01);
+
+    button {
+      background-color: #202020;
+      color: rgba(var(--ids__background-RGB), 1);
+    }
+  }
+
+  // .plyr--video {
+  //   .plyr__controls {
+  //     padding: 10px 7.5em;
+  //     bottom: 20%;
+  //     transform: translateY(50%);
+  //     background: transparent;
+
+  //     @media #{$ids__mobile} {
+  //       padding: 10px 3em;
+  //       bottom: 25%;
+  //     }
+
+  //     .plyr__volume {
+  //       max-width: unset;
+  //       width: 8em;
+
+  //       @media #{$ids__mobile} {
+  //         display: none;
+  //       }
+  //     }
+  //   }
+
+  //   .plyr__control--overlaid {
+  //     display: none;
+  //   }
+  // }
+}

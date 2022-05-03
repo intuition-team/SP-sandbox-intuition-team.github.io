@@ -1,0 +1,136 @@
+.vacancy-promo-box {
+  margin-bottom: 0.5em;
+
+  a.vacancy-promo {
+    display: block;
+    border-radius: 0.4em;
+
+    padding: 0.7em 5em 0.9em 0.9em;
+    background-color: rgba(var(--ids__surface-RGB), 1);
+    color: rgba(var(--ids__text-RGB), 1);
+    border-bottom: 0;
+
+    font-size: 0.8em;
+
+    &:hover {
+      background-color: rgba(var(--ids__hover-RGB), 0.1);
+      color: rgba(var(--ids__hover-RGB), 1);
+      border-bottom: 0;
+
+      .false-button {
+        background-color: rgba(var(--ids__hover-RGB), 1);
+        // border: 1px solid rgba(var(--ids__hover-RGB), 1);
+        color: rgba(var(--ids__on-accent-RGB), 1);
+        transition: background-color 0s ease, border-color 0s ease;
+      }
+    }
+
+    .vacancy-promo-caption {
+      opacity: 0.6;
+    }
+
+    h3 {
+      margin-top: 0.8em;
+      margin-bottom: 0.2em;
+    }
+
+    .false-button {
+      display: inline-block;
+      border-radius: 0.3em;
+      color: rgba(var(--ids__on-accent-RGB), 1);
+      background-color: rgba(var(--ids__text-RGB), 0.2);
+      // border: 1px solid rgba(var(--ids__text-RGB), .4);
+      padding: 0.1em 0.4em 0.1em;
+      transition: background-color 0.8s ease, border-color 0.8s ease;
+    }
+  }
+}
+
+.vacancies-on-the-cover {
+  display: flex;
+  justify-content: flex-end;
+
+  .vacancies-box {
+    margin-top: -2em;
+    background-color: rgba(255, 30, 30, 1);
+    padding: 0.5em 1.5em 0.5em 0.6em;
+    border-radius: 0.3em;
+
+    .vacancy-promo-box {
+      margin-bottom: 0;
+
+      &:nth-child(n + 5) {
+        display: none;
+      }
+    }
+
+    a.vacancy-promo {
+      display: inline-block;
+
+      background: transparent;
+      padding: 0;
+      margin-bottom: 0.1em;
+      border-radius: 0;
+      border-bottom: 1px solid rgba(var(--ids__text-RGB), 0.3);
+
+      &:hover {
+        color: inherit;
+        border-bottom: 1px solid rgba(var(--ids__text-RGB), 0.6);
+      }
+
+      * {
+        display: none;
+      }
+
+      h3 {
+        font-size: 1em;
+        display: block;
+        font-weight: 400;
+        margin-top: 0;
+        // margin-bottom: 0;
+      }
+    }
+
+    p {
+      // font-weight: 200;
+      font-size: 0.8em;
+    }
+  }
+}
+
+// VACANCY PAGE
+
+ul {
+  margin-bottom: 1em;
+}
+span {
+  color: rgba(var(--ids__accent-RGB), 1);
+}
+.description {
+  padding-right: 8em;
+  margin-bottom: 2em;
+}
+.vacancy-page-hr-card {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid red;
+  border-radius: 1em;
+  margin: 3em 0em;
+  img {
+    max-width: 30em;
+  }
+}
+.hr-card-text-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-right: 2em;
+}
+.vacancy-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  a {
+    margin-right: 2em;
+  }
+}

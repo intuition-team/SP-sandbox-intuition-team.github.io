@@ -1,0 +1,41 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+
+nav {
+  display: flex;
+
+  .logo-container {
+    display: block;
+    width: 1.25em;
+  }
+  a.logo-container {
+    &:hover {
+      filter: brightness(120%);
+    }
+  }
+
+  .nav-item {
+    &:not(:last-child) {
+      margin-right: 0.7em;
+    }
+
+    a {
+      border-bottom: none;
+      &:hover {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+.slogan {
+  display: flex;
+}
+
+.header-img {
+  position: relative;
+}
