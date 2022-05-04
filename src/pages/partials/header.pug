@@ -1,10 +1,9 @@
 include /mixins/a
 
 header
-  nav
-    .nav-item
-      +a.logo-container(href="/")
-        img(src="/images/sp-logo-w.png", alt="Superpedestrian logo")   
+  +a.logo-container(href="/")
+    img(src="/images/sp-logo-w.png", alt="Superpedestrian logo")   
+  nav  
     .nav-item
       a.js-scroll-link.ids__hover-RGB(href="#main_about") Company
     .nav-item
