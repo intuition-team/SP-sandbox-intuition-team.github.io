@@ -24,7 +24,7 @@
 
   a {
     transition: color 0.8s ease, background-color 0.8s ease,
-      border-color 0.8s ease;
+    border-color 0.8s ease;
 
     &:hover {
       transition: color 0s ease, background-color 0s ease, border-color 0s ease;
@@ -36,6 +36,7 @@
     padding: 0.5em 0.8em;
     border: 1px solid rgba(var(--ids__accent-RGB), 1);
     border-radius: 5em;
+    cursor: pointer;
 
     &:hover {
       transition: color 0s ease, background-color 0s ease, border-color 0s ease;
