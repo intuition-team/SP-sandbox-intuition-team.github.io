@@ -9,35 +9,21 @@
   margin-top: -12em;
 }
 
-// .plyr-player-box {
-//   border-radius: 0.7em;
-//   overflow: hidden;
-
-//   .plyr {
-//     --plyr-color-main: #0099ff;
-//     transform: scale(1.01);
-
-//     button {
-//       background-color: #202020;
-//       color: rgba(var(--ids__background-RGB), 1);
-//     }
-//   }
-// }
-
-// .video-wrapper {
-//   display: flex;
-//   iframe {
-//     min-width: 52em;
-//     height: 31.25em;
-//     border: 0.1px solid rgb(217, 2, 23);
-//     border-radius: 1.5em;
-//   }
-// }
-
-#main_about {
+.about-app{
+  display: flex;
+  align-items: center;
   max-width: 52em;
+  h2{
+      font-family: 'Nothing You Could Do', cursive;
+      transform: rotate(333deg);
+    }
+  figure{
+    max-width: 25em;
+  }
 }
-
+.text-container{
+    
+  }
 .vacancies-pagination {
   margin-top: 2em;
   a {
