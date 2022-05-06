@@ -12,18 +12,25 @@
 .about-app{
   display: flex;
   align-items: center;
+  position: relative;
   max-width: 52em;
+  
   h2{
       font-family: 'Nothing You Could Do', cursive;
       transform: rotate(333deg);
+      text-shadow: 11px 1.2px 0px rgba(var(--ids__accent-RGB), 0.5);
     }
   figure{
     max-width: 25em;
   }
-}
-.text-container{
-    
+  .app-store-icons {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
   }
+}
+
 .vacancies-pagination {
   margin-top: 2em;
   a {
