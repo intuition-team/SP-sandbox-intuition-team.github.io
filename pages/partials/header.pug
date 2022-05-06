@@ -3,19 +3,27 @@ include /mixins/a
 header
   +a.logo-container(href="/")
     img(src="/images/SP-Logo.png", alt="Superpedestrian logo")   
-  nav  
-    .nav-item
-      a.js-scroll-link.ids__hover-RGB(href="#main_about") Company
-    .nav-item
-      a.js-scroll-link(href="#main_work") Ride
-    .nav-item
-      a.js-scroll-link(href="#vacancies") Tech
-    .nav-item
-      a.js-scroll-link(href="#vacancies") Cities
-    .nav-item
-      a.js-scroll-link(href="#vacancies") Blog
-  //- nav 
-  //-   .nav-item
-  //-     a(href="/")
-  //-       img.logo-search(src="/images/Magnifier_icon.png", alt="Magnifier")  
+  nav 
+    .dropdown
+      a.nav-item(href='#') Company
+      .dropdown-content
+        a(href='#') ABOUT
+        a(href='#') TEAM
+        a(href='#') SUSTAINABILITY
+        a(href='#') REPORTS
+    .dropdown
+      a.nav-item(href='#') Ride
+      .dropdown-content
+        a(href='#') LOCATIONS
+        a(href='#') HOW TO RIDE
+        a(href='#') SAFETY
+        a(href='#') RIDER PROGRAMS
+    .dropdown
+      a.nav-item(href='#') Tech
+      .dropdown-content
+        a(href='#') VEHICLES
+        a(href='#') WHAT'S INSIDE
+    a.nav-item(href='#') Cities
+    a.nav-item(href='#') Blog 
+  
   
