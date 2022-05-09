@@ -69,14 +69,15 @@ nav {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   
-  a{
-   padding: 0.6em 0.1em;
+    a{
+    padding: 0.5em 0.1em;
     text-decoration: none;
     display: block;
     text-align: left; 
-  &:hover{
-    background-color: rgba(var(--ids__accent-RGB), 1);
-    color:black;
+
+    &:hover{
+      background-color: rgba(var(--ids__accent-RGB), 1);
+      color:black;
     }
   }
 }
