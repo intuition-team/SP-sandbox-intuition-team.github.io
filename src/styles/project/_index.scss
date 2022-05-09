@@ -47,7 +47,14 @@
     }
   }
 
-
+  .sticker{
+    position: absolute;
+    max-width: 7em;
+    z-index: 1;
+    right: 0.3em;
+    top: 3.8em;
+    transform: rotate(18deg);
+  }
 // -------------------------ABOUT SAFETY----------------------
 
 

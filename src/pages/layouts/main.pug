@@ -10,6 +10,7 @@ html
     block stylesheets
       link(rel='stylesheet', href=assetPath('/assets/main.css'))
       link(rel="icon", href="/favicon-s.png" )
+      link(rel="stylesheet" href="style/slider-def.css")
 
       link(rel="preconnect", href="https://fonts.googleapis.com")
       link(rel="preconnect", href="https://fonts.gstatic.com" crossorigin)
@@ -24,6 +25,10 @@ html
         
     main
       block content
+      include /partials/about-safety
+      include /partials/about-location
+      include /partials/about-us
+      include /partials/about-app
 
     block footer
       include /partials/footer
