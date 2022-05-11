@@ -18,11 +18,7 @@
     font-weight: 400;
   }
 
-  button {
-    &:hover {
-      background-color: rgba(var(--ids__hover-RGB), 1);
-    }
-  }
+  
 
   a {
     transition: color 0.8s ease, background-color 0.8s ease,
@@ -33,7 +29,17 @@
       transition: color 0s ease, background-color 0s ease;
       border-bottom: none;
     }
+    
   }
+
+  a.ids__button-link{
+      border:0.5px solid transparent;
+    &:hover {    
+      border: 0.5px solid black;
+      background-color: rgba(var(--ids__hover-RGB), 1);
+    }
+  }
+
 
   a.lead {
     font-size: 1.1em;
@@ -45,8 +51,8 @@
     transition: 0.1s background-color linear, 0.1s color linear;
 
     &:hover {
-      transition: color 0s ease, background-color 0s ease, border-color 0s ease;
-      background-color: rgba(76, 76, 76, 0.4);
+      transition: color 0.5s ease, background-color 0.9s ease, border-color 0s ease;
+      background-color: rgba(var(--ids__text-RGB), 1);
       color: rgba(var(--ids__hover-RGB), 1);
     }
   }

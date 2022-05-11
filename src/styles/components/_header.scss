@@ -10,39 +10,6 @@ header {
   cursor: pointer;  
 }
 
-// nav {
-//   display: flex;
-//   align-items: center;
-
-//   .logo-container {
-//     display: block;
-//     max-width: 10em;
-//   }
-//   a.logo-container {
-//     &:hover {
-//       filter: brightness(120%);
-//     }
-//     .logo-search{
-//       max-width: 5em;
-//     }
-//   }
-
-//   .nav-item {
-//     &:not(:last-child) {
-//       margin-right: 0.7em;
-//     }
-
-//     a {
-//       border-bottom: none;
-//       &:hover {
-//         border-bottom: none;
-//       }
-//     }
-//   }
-// }
-
-
-
 .header-img {
   position: relative;
 }
@@ -82,3 +49,7 @@ nav {
   }
 }
 
+.sticker-header{
+  right: 0.3em;
+  top: 3.8em;
+}
