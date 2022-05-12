@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     position: relative;  
+    margin-bottom: 5em;
     
     figure{
       max-width: 25em;
@@ -21,15 +22,12 @@
       }
       figure{
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         z-index: 1;
+        max-width: 11em;
         padding-top: 9em;
-        margin-right: 2.5em;
-        .google-icon{
-          max-width: 12.4em;
-        }
-        .apple-icon{
-          max-width: 10em;
+        img{
+          margin-left: 0.5em;
         }
       }
     }

@@ -1,0 +1,17 @@
+.about-vehicles{
+    
+}
+.vehicles-images{
+    display: flex;
+    justify-content: space-around;
+    height: 20em;
+    img{
+        width: 15em;
+        transition: width 1.5s;
+        filter: grayscale(1);
+        &:hover{
+            width: 20em;
+            filter: none;
+        }
+    }
+}
