@@ -1,12 +1,14 @@
-.main-page-cover {
-  min-height: 30em;
-  padding: 1em;
-  position: relative;
-  border-radius: 0.3em;
-}
 
 .shift-up {
-  margin-top: -14em;
+  margin-top: -35em;
+  margin-right: 13em;
+  margin-bottom: 10em;
+  @media #{$ids__mobile} {
+    margin-top: -17em;
+  }
+  @media (max-width: 1700px) {
+    margin-top: -27em;
+  }
 }
 
 .sticker{
