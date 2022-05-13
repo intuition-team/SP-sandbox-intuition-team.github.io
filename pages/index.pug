@@ -6,16 +6,17 @@ block meta
 block content
   
   .ids__wrapper.ids__full-width 
-    video(autoplay muted loop id="myVideo")
-      source(src="/images/video-background.mp4" type="video/mp4")
+    figure 
+      img(src="/images/main-img-girl.png" alt="girl with scooter")
     
   .ids__wrapper.shift-up
     h1 Superpedestrian
     .ids__text
-      a.lead Locations
-
+    a.ids__button-link Locations
+    
   .ids__stack.L
-  img.sticker.sticker-main-page(src="images/sticker-removebg.png", alt="safe-ride-sticker")
+  .ids__stack.L
+  //- img.sticker.sticker-main-page(src="images/sticker-removebg.png", alt="safe-ride-sticker")
 
 
 
@@ -35,7 +36,7 @@ block content
 
 
     //- .ids__stack.M
-    //- .ids__section.about-vehicles
+    //- .ids__section.about-us
     //-   h2 SUPERPEDESTRIAN 
     //-   .ids__text
     //-     p Trusted partners. City people. Innovators.

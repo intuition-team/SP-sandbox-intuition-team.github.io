@@ -4,18 +4,17 @@
     line-height: 0.85;
     font-weight: 400;
     letter-spacing: -0.015em;
-    color: rgba(var(--ids__accent-RGB), 1);
     -webkit-text-stroke: 0.002em #40413e;
     @media #{$ids__mobile} {
-      font-size: 3.9em;
+      font-size: 3em;
     }
   }
 
   h2 {
-    font-size: 3.33em;
+    font-size: 4em;
     line-height: 1;
     margin-bottom: 0.5em;
-    font-weight: 400;
+    font-weight: 600;
   }
 
   
@@ -33,12 +32,21 @@
   }
 
   a.ids__button-link{
-      border:0.5px solid transparent;
-    &:hover {    
-      border: 0.5px solid black;
-      background-color: rgba(var(--ids__hover-RGB), 1);
+      background-color: transparent;
+      border: 3px solid rgba(var(--ids__background-RGB), 1);
+      border-radius: 3em;
+      padding: 1.4em 2em 1.2em 2em;
+      text-transform: uppercase;
+      color: rgba(var(--ids__background-RGB), 1);
+      transition: 0.1s background-color linear, 0.1s color linear;
+    
+      &:hover {  
+      color: rgba(var(--ids__text-RGB), 1);
+      background-color: rgba(var(--ids__background-RGB), 1);
     }
-  }
+    }
+
+  
 
 
   a.lead {
@@ -58,6 +66,3 @@
   }
 }
 
-a.nav-item{
-  margin-right: 1em;
-}

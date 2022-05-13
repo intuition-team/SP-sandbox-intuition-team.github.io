@@ -1,12 +1,12 @@
 header {
   display: flex;
   justify-content: space-between;
-  padding: 0.3em 0.9em 0 0.3em;
+  padding: 0.7em 0.9em 0 0.7em;
   margin-bottom: 1em;
 }
 .logo-container {
   display: block;
-  max-width: 11em;
+  max-width: 13em;
   cursor: pointer;  
 }
 
@@ -17,40 +17,64 @@ header {
 nav {
   display: flex;
   align-items: center;
+  margin-right: 0.3em;
 }
 
 .dropdown {
     overflow: hidden;
+    
     &:hover {
       .dropdown-content {
         display: block;
         transition: 4ms;
+        transition: left 0s .2s linear,transform 0s .2s linear,opacity .2s ease-out;
       }
     }
   }
+
+  a.nav-item{
+    font-size: 1.3em;
+    margin-right: 1em;
+    transition: color 170ms ease-in-out, background-color 170ms ease-in-out;
+  }
+
   .dropdown-content {
   display: none;
   position: absolute;
-  margin-top: 0.1em;
-  background-color: #f9f9f9;
+  margin-left: -1em;
+  background-color: rgba(var(--ids__background-RGB), 1);
   min-width: 9.5em;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 2;
+  transition: left 0s .2s linear,transform 0s .2s linear,opacity .2s ease-out;
   
-    a{
-    padding: 0.5em 0.1em;
+    a{ 
+    font-size: 1.3em;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 2em;
     text-decoration: none;
     display: block;
     text-align: left; 
+    opacity: 0.6;
+    
 
-    &:hover{
-      background-color: rgba(var(--ids__accent-RGB), 1);
-      color:black;
-    }
+      &:first-child{
+         margin-top: 1em;
+      }
+      &:last-child{
+        padding-bottom:  0.8em;
+      }
+     &:hover{
+      opacity: 1;
+     }
   }
 }
 
-.sticker-header{
-  right: 0.3em;
-  top: 3.8em;
+
+.search{
+  cursor: pointer;
+  img{
+    max-width: 1.5em;
+    opacity: 0.4;
+  }
 }
