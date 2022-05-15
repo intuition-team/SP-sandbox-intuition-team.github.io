@@ -1,21 +1,32 @@
 .about-app{
-    display: flex;
-   
-     figure{
+    @media #{$ids__mobile} {
+      margin-top: -5em;
+    }
+  }
+    .about-app-main-img{
+      figure{
       max-width: 45em;
       margin-right: 1em;
+     
       @media #{$ids__mobile} {
         max-width: 15em;
       }
+      img{
+        height: 33em;
+        object-fit: cover;
+        object-position: 50% 90%;
+      }
     } 
   
-  }
+    } 
+    
+  
 
   
-  .about-app_icons {
-    
+  figure.about-app_icons {
+    display: flex;
       h3{
-        letter-spacing: 0.1em;
+        letter-spacing: 0.11em;
       }
       figure{
         display: flex;
