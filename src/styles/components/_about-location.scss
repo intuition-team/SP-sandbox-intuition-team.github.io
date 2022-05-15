@@ -1,0 +1,20 @@
+.about-location{
+    display: flex;
+    justify-content: center;
+    @media (max-width: 1300px) {
+         flex-direction: column;
+       }
+    figure{
+        margin-right: 2em;
+        img{
+            width: 45em;
+            height: auto;
+            @media (max-width: 1566px) {
+                width: 40em;
+              }
+            @media #{$ids__mobile} {
+                width: 40em;
+              }
+        }
+    }
+}

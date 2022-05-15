@@ -1,28 +1,6 @@
 .about-safety{
     
-}
-.about-safety-grid-cell {
-    display: flex; 
-    margin-right: 1em;
-    
-    img{
-        width: 12em;
-       &:hover{ 
-            width: 14em;
-            transition: width 1s; 
-            
-        } 
-    }
-        
-    
-    ul {
-        li {
-            letter-spacing: 0.04em;
-            line-height: 1.5em;
-            &::before {
-             content: none;
-            }
-            
-        }
+    h2{
+        color: rgba(var(--ids__background-RGB), 1);
     }
 }
