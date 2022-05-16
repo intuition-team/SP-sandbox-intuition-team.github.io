@@ -17,4 +17,32 @@
               }
         }
     }
+    p{
+      position: relative;
+      // background: #000000;
+      // background: linear-gradient(to top, #000000 15%, #D9FF00 45%, #000000 61%);;
+      // -webkit-background-clip: text;
+      // -webkit-text-fill-color: transparent;
+        &::after{
+          content: "\2501" ;
+          color: rgba(var(--ids__accent-RGB), 1)
+        
+        }
+    }
+    // mark{
+    //   display: inline-block;
+    //   line-height: 0.5em;
+    //   background-color: rgba(var(--ids__accent-RGB), 1);
+    
+    // }
+    // mark.bg-text{
+      
+    //     color: transparent;    
+    //     -webkit-background-clip: text;
+    //     background-clip: text;    
+    //     background-image: url('/images/text-marker.png');
+    //     background-position: 50% 50%;
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    //   }
 }

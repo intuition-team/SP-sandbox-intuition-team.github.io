@@ -1,0 +1,181 @@
+include /mixins/meta
+block meta
+  +meta(title="Safety")
+doctype html
+
+html
+  head
+    block meta
+      +meta()
+
+    block stylesheets
+      link(rel='stylesheet', href=assetPath('/assets/main.css'))
+      link(rel="icon", href="/favicon-s.png" )
+      link(rel="stylesheet" href="style/slider-def.css")
+      link(rel="preconnect", href="https://fonts.googleapis.com")
+      link(rel="preconnect", href="https://fonts.gstatic.com" crossorigin)
+      link(href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap" rel="stylesheet")
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  body.ids
+    block header
+      include /partials/header
+    
+
+  .ids__wrapper.ids__text
+    .ids__stack.XS
+    h2 Ride safe
+
+    p Superpedestrian champions safe streets for everyone. We’re working toward a future where riders, pedestrians, bicyclists, transit users, people with disabilities, and drivers share safe streets!
+    
+    
+    .ids__grid.XS
+      .ids__grid-cell
+        a(href="#safe-riders") Safe riders
+      .ids__grid-cell
+        a(href="#safe-streets") Safe streets
+      .ids__grid-cell
+        a(href="#safe-vehicles") Safe vehicles
+      .ids__grid-cell
+        a(href="#safe-partners") Safety partners 
+    
+    
+    .ids__stack.M
+    h3#safe-riders Safe riders
+    .ids__stack.XS
+    p Superpedestrian’s technology is designed to keep you safe. But how you ride them matters just as much.
+    .ids__stack.XS
+    .ids__grid
+      .ids__grid-cell
+        ul BE SMART, BE SAFE:
+        .ids__stack.XS 
+          li Always wear a helmet
+          li Only one person per vehicle
+          li Never ride under the influence
+          li You must be 18+ to ride
+      .ids__grid-cell
+        img(src="/images/girl-helmet.jpeg", alt="girl with helmet")
+    
+    .ids__stack.M
+    .ids__text
+      p No helmet? We've got you covered
+      p We always recommend that you wear a helmet. That’s why we’ve teamed up with our favorite brands to offer helmets to our riders at an affordable price. 
+    .ids__grid
+      .ids__grid-cell
+        ul  
+          li BERN offers discounted helmets to LINK riders in the USA. Purchase any helmet on the Bern website and enter code LINKxBERN25 at checkout for 25% off.
+          li CLOSCA offers discounted helmets to LINK riders across Europe, and the Middle East*. Purchase either the Helmet Loop or Helmet Loop Reflective via the Closca website and enter code CLOSCAxLINK15 at checkout for 15% off.
+          li HELMET GIVEAWAYS. We give away free helmets at many community events. We’ve given thousands of free helmets to riders so far, and we’re just getting started.
+
+
+    .ids__stack.M
+
+    h3#safe-streets Safe Streets
+    .ids__stack.XS
+    p Superpedestrian riders know that safety comes first. These are the principles we teach in our Level Up safety trainings.
+    .ids__stack.XS
+    .ids__grid
+      .ids__grid-cell
+        img(src="/images/two-person.jpeg", alt="two-person")
+      .ids__grid-cell
+        ul RULES OF THE ROAD:
+        .ids__stack.XS 
+          li Follow traffic laws and street signs
+          li Always let pedestrians go first
+          li Ride in the bike lane when available
+          li Ride with traffic on one-way streets
+          .ids__stack.XS 
+          p See your local page for city-specific rules
+    
+    .ids__stack.M
+    
+    .ids__grid
+      .ids__grid-cell
+        ul PARKING GUIDELINES:
+        .ids__stack.XS 
+          li Use the kickstand to park upright
+          li Keep walkways clear
+          li Don’t block curb cuts, access ramps, doors, or loading docks
+          li Keep bus stops clear
+          .ids__stack.XS 
+          p You must park safely and courteously. In most cities, you are required to take a photo showing proper parking. 
+      .ids__grid-cell
+        img(src="/images/parking.jpeg", alt="parking")
+
+    .ids__stack.M
+
+    .ids__grid
+      .ids__grid-cell
+        ul VISION ZERO
+          p We firmly believe in the core principles of Vision Zero – that no one should be killed or seriously injured on our roads, and that thoughtful city planning and engineering hold the most power to prevent crashes. We’re doing our part to make Vision Zero a reality: 
+          li Our technology quickly enforces slow-ride and no-ride zones to detect and prevent unsafe riding
+          li We advocate for and invest in smart street designs
+          li We host and sponsor safe riding education events and workshops
+          li We partner with organizations that are also dedicated to Vision Zero work
+    
+    .ids__stack.M
+
+    h3#safe-vehicles Safe Vehicles
+    .ids__stack.XS
+    p We design, manufacture, and operate our scooters with safety as our #1 priority. We test our scooters so they perform 2-4x better than others when handling challenges like bumps or hard braking.
+    .ids__stack.XS
+    a.ids__button-link-black(href="/vacancies/safety") Our vehicles
+    .ids__stack.S
+    .ids__grid
+      .ids__grid-cell
+        ul OUR SCOOTERS ARE BUILT BETTER: 
+        .ids__stack.XS 
+          li Three (3) independent brakes   
+          li Wider and longer deck for stability
+          li High-visibility colors, lights, and reflectors
+          li Long-range battery (61 mi / 98 km)
+          li Steel reinforced frame to withstand bumps
+          li Tip-over detection
+          .ids__stack.S
+          a.ids__button-link-black(href="/vacancies/safety") Our technology
+      .ids__grid-cell
+        img(src="/images/engineer.jpeg", alt="engineer")
+
+    .ids__stack.M 
+
+    h3#safe-partners Safe Partners
+    .ids__stack.XS
+    p We design, manufacture, and operate our scooters with safety as our #1 priority. We test our scooters so they perform 2-4x better than others when handling challenges like bumps or hard braking.
+    .ids__stack.XS
+    .ids__grid.L
+      .ids__grid-cell
+        img(src="/images/partner1.png", alt="partner")
+      .ids__grid-cell
+        img(src="/images/partner2.jpeg", alt="partner")
+      .ids__grid-cell
+        img(src="/images/partner3.png", alt="partner")
+      .ids__grid-cell
+        img(src="/images/partner4.png", alt="partner")
+
+    .ids__grid.L
+      .ids__grid-cell
+        img(src="/images/partner5.png", alt="partner")
+      .ids__grid-cell
+        img(src="/images/partner6.jpeg", alt="partner")
+      .ids__grid-cell
+        img(src="/images/partner7.jpeg", alt="partner")
+      .ids__grid-cell
+        img(src="/images/partner8.jpeg", alt="partner")
+      
+    .ids__grid.L
+      .ids__grid-cell
+        img(src="/images/partner9.png", alt="partner")   
+      
+
+
+  
+  .ids__stack.M
+  block footer
+    include /partials/footer
+
+  block javascripts
+    script(src=assetPath('/assets/main.js'))
