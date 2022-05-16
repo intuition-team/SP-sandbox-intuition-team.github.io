@@ -1,8 +1,8 @@
-.about-app{
-    @media #{$ids__mobile} {
-      margin-top: -5em;
-    }
+.about-app {
+  @media #{$ids__mobile} {
+    margin-top: -5em;
   }
+}
     .about-app-main-img{
       figure{
       max-width: 45em;

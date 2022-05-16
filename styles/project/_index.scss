@@ -1,22 +1,19 @@
 
-.shift-up {
-  margin-top: -35em;
-  margin-right: 13em;
-  margin-bottom: 10em;
-  @media #{$ids__mobile} {
-    margin-top: -17em;
-  }
-  @media (max-width: 1700px) {
-    margin-top: -27em;
-  }
+.banner {
+  padding: 2em;
+  height: 30em;
+  background-image: url('/images/main-img-girl.png');
+  background-size: cover;
+  background-position: center;
 }
 
-.sticker{
+.sticker {
     position: absolute;
     max-width: 8.5em;
     z-index: 1;
     transform: rotate(36deg);
   }
+
 .sticker-main-page {
     right: 2em;
     top: 34em;
