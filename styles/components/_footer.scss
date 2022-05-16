@@ -1,22 +1,21 @@
 .footer {
   background-color: black; 
-  min-height: 27em;
-  padding: 2em 5em 0 9em;
-  min-width: 100%;
+  // padding: 2em 5em 0 9em;
+  width: 100%;
+
 
   @media (max-width: 1566px){
-    padding: 2em 5em 0 4em;
+
+    // padding: 2em 5em 0 4em;
 
   }
-  @media #{$ids__mobile} {
-  }
+  
   
   .ids__grid-cell{
     display: flex;
     flex-direction: column;
 
     a{
-      font-size: 1.5em;
       margin: 0.5em 0 ;
     }
   }
