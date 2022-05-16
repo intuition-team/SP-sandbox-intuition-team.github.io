@@ -6,16 +6,34 @@ block meta
 block content
   
   .ids__wrapper.ids__full-width 
-    figure 
-      img(src="/images/main-img-girl.png" alt="girl with scooter")
+    .banner
+      h1 Superpedestrian
+      a.ids__button-link Locations
     
-  .ids__wrapper.shift-up
-    h1 Superpedestrian
-    .ids__text
-    a.ids__button-link Locations
-    
-  .ids__stack.L
-  .ids__stack.M
+  .ids__wrapper
+    .about-app.ids__grid.XXL
+      .ids__grid-cell.about-app-main-img
+        figure 
+          img(src="/images/app-phone.jpg", alt="dowload app")  
+      .ids__grid-cell
+        h2 Let’s ride! 
+        .ids__stack.XS
+        h3 DOWNLOAD THE SUPERPEDESTRIAN APP TO GET STARTED
+          //- h3 Download the Superpedestrian app to get started
+        .ids__stack.XS
+        figure.about-app_icons
+          img(src="/images/google-play.png", alt="dowload in google play")   
+          img(src="/images/app-store-icon.png", alt="dowload in app store")  
+    .ids__stack.S
+    img(src="/images/4screen.png", alt="dowload in google play")   
+    .ids__stack.S
+
+    include /partials/about-app
+    include /partials/about-safety
+    include /partials/about-location
+
+      //- include /partials/about-us
+
   //- img.sticker.sticker-main-page(src="images/sticker-removebg.png", alt="safe-ride-sticker")
 
 
