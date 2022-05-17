@@ -1,5 +1,5 @@
+
 table{
-    border: 3px solid black;
     th{
         border-bottom: 3px solid black;
         font-size: 3.3em;
@@ -13,3 +13,9 @@ table{
     
     
 }
+.ids__table-td {
+    padding: 0;
+    border: none;
+}
+
+    

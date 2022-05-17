@@ -1,33 +1,37 @@
 .about-app {
-  @media #{$ids__mobile} {
-    margin-top: -5em;
+  p{
+    letter-spacing: 0.11em;
+    line-height: 1.55em;
+    text-transform: uppercase;
   }
 }
     .about-app-main-img{
       figure{
       max-width: 45em;
       margin-right: 1em;
-     
-      @media #{$ids__mobile} {
-        max-width: 15em;
-      }
+
       img{
-        height: 33em;
+        height: 24em;
         object-fit: cover;
         object-position: 50% 90%;
+
+        @media #{$ids__mobile} {
+          height: 24em;
+          object-fit: cover;
+          object-position: 50% 90%;
+        }
       }
     } 
-  
-    } 
+  } 
     
   
 
   
   figure.about-app_icons {
     display: flex;
-      h3{
-        letter-spacing: 0.11em;
-      }
+    @media #{$ids__mobile} {
+      max-width: 13.5em;
+    } 
       figure{
         display: flex;
         max-width: 13em;
