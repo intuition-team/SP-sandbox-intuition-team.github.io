@@ -6,60 +6,48 @@ block meta
 block content
   
   .ids__wrapper.ids__full-width 
-    .banner.banner-main
-      .ids__stack.S
-      h2 Superpedestrian
-      .ids__stack.XS
-      a.ids__button-link Locations
+    .banner(style="background-image: url('/images/main-img-girl.png')")
+      h2 Let’s ride!
+      p Download the Superpedestrian app to get started
+      .app_badges
+        a(href="#")
+          img(src="/images/google-play.png", alt="dowload in google play")
+        a(href="#")
+          img(src="/images/app-store-icon.png", alt="dowload in app store")  
+
+      
+      //- a.ids__button-link Locations
 
       //- ABOUT APP
     
   .ids__wrapper
-    .ids__stack.M
-    .about-app.ids__grid
-      .ids__grid-cell.about-app-main-img
-        figure 
-          img(src="/images/app-phone.jpg", alt="dowload app")  
-        .ids__stack.S
-      .ids__grid-cell
-        h2 Let’s ride! 
-        .ids__stack.XS
-        p Download the Superpedestrian app to get started
-        .ids__stack.XS
-        .ids__grid-cell
-          figure.about-app_icons
-            img(src="/images/google-play.png", alt="dowload in google play")   
-            img(src="/images/app-store-icon.png", alt="dowload in app store")  
     .ids__stack.S
-    img(src="/images/4screen.png", alt="dowload in google play")   
-    .ids__stack.M
+    figure
+      img(src="/images/4screen.png", alt="dowload in google play")   
 
       //- ABOUT SAFETY
 
-  .ids__wrapper.ids__full-width 
-  .banner.banner-about-safety
-    .ids__stack.S
-    h2.black Ride safe
-    .ids__stack.XS
-    a.ids__button-link(href="/links/safety") Designed for safety
+  .ids__wrapper.ids__edge-to-edge 
+    .banner(style="background-image: url('/images/girl-scooter-helmet.jpeg')")
+      .ids__stack.S
+      h2.black Ride safe
+      .ids__stack.XS
+      a.ids__button-link(href="/links/safety") Designed for safety
   .ids__stack.M
 
       //- ABOUT LOCATION  
 
-  .ids__wrapper.ids__full-width 
-    .ids__grid
-      
+  .ids__wrapper
+    .ids__grid.ids__grid-inset-M  
       .ids__grid-cell
-      
-        img(src="/images/map.jpeg", alt="map")
-        .ids__stack.S
+        img(src="/images/map.jpeg", alt="world map with superpedestrian cities shown")
+
       .ids__grid-cell 
-        h3 10 countries 
-        h3 60 cities 
+        h3 10 countries<br>60 cities 
         .ids__stack.XS
         p and counting…
         .ids__stack.S
-        a.ids__button-link-black how we work with cities
+        a.ids__button-link how we work with cities
       
       
     
