@@ -2,19 +2,13 @@
 .banner {
   padding: 2em;
   height: 30em;
-  background-image: url('/images/main-img-girl.png');
+  
   background-size: cover;
   background-position: center;
 }
-
-.sticker {
-    position: absolute;
-    max-width: 8.5em;
-    z-index: 1;
-    transform: rotate(36deg);
-  }
-
-.sticker-main-page {
-    right: 2em;
-    top: 34em;
+.banner-main{
+  background-image: url('/images/main-img-girl.png');
+}
+.banner-about-safety{
+  background-image: url('/images/girl-scooter-helmet.jpeg');
 }

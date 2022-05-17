@@ -1,75 +1,74 @@
 extends /layouts/main.pug
 
 block meta
-  +meta(title="Superpedestrian", description="Snoonu HR website", og-image="")
+  +meta(title="Superpedestrian", description="Superpedestrian website")
 
 block content
   
   .ids__wrapper.ids__full-width 
-    .banner
-      h1 Superpedestrian
+    .banner.banner-main
+      .ids__stack.S
+      h2 Superpedestrian
+      .ids__stack.XS
       a.ids__button-link Locations
+
+      //- ABOUT APP
     
   .ids__wrapper
-    .about-app.ids__grid.XXL
+    .ids__stack.M
+    .about-app.ids__grid
       .ids__grid-cell.about-app-main-img
         figure 
           img(src="/images/app-phone.jpg", alt="dowload app")  
+        .ids__stack.S
       .ids__grid-cell
         h2 Let’s ride! 
         .ids__stack.XS
-        h3 DOWNLOAD THE SUPERPEDESTRIAN APP TO GET STARTED
-          //- h3 Download the Superpedestrian app to get started
+        p Download the Superpedestrian app to get started
         .ids__stack.XS
-        figure.about-app_icons
-          img(src="/images/google-play.png", alt="dowload in google play")   
-          img(src="/images/app-store-icon.png", alt="dowload in app store")  
+        .ids__grid-cell
+          figure.about-app_icons
+            img(src="/images/google-play.png", alt="dowload in google play")   
+            img(src="/images/app-store-icon.png", alt="dowload in app store")  
     .ids__stack.S
     img(src="/images/4screen.png", alt="dowload in google play")   
-    .ids__stack.S
+    .ids__stack.M
 
-    include /partials/about-app
-    include /partials/about-safety
-    include /partials/about-location
+      //- ABOUT SAFETY
+
+  .ids__wrapper.ids__full-width 
+  .banner.banner-about-safety
+    .ids__stack.S
+    h2.black Ride safe
+    .ids__stack.XS
+    a.ids__button-link(href="/links/safety") Designed for safety
+  .ids__stack.M
+
+      //- ABOUT LOCATION  
+
+  .ids__wrapper.ids__full-width 
+    .ids__grid
+      
+      .ids__grid-cell
+      
+        img(src="/images/map.jpeg", alt="map")
+        .ids__stack.S
+      .ids__grid-cell 
+        h3 10 countries 
+        h3 60 cities 
+        .ids__stack.XS
+        p and counting…
+        .ids__stack.S
+        a.ids__button-link-black how we work with cities
+      
+      
+    
+  .ids__stack.M
+  
 
       //- include /partials/about-us
 
-  //- img.sticker.sticker-main-page(src="images/sticker-removebg.png", alt="safe-ride-sticker")
 
 
 
-  //- .ids__wrapper 
-
-    //- .ids__section.about-safety
-    //-   h2 BE SMART, BE SAFE: 
-    //-   .ids__text
-    //-     p Designed for safety
-    //-     a.ids__button-link.M Learn more
-
-    //- .ids__section.about-location
-    //-   h2 10 COUNTRIES 60 CITIES
-    //-   .ids__text
-    //-     p And counting…
-    //-     a.ids__button-link.M How we work with cities
-
-
-    //- .ids__stack.M
-    //- .ids__section.about-us
-    //-   h2 SUPERPEDESTRIAN 
-    //-   .ids__text
-    //-     p Trusted partners. City people. Innovators.
-    //-     a.ids__button-link.M About us
-      
-    //- .ids__section.about-app
-    //-   .about-app_icons 
-    //-     h2 LET’S RIDE
-    //-     figure 
-    //-       img.google-icon(src="/images/google-play-badge.png", alt="dowload in google play")   
-    //-       img.apple-icon(src="/images/AppStore.svg", alt="dowload in app store")  
-    //-   figure 
-    //-     img(src="/images/app-phone.JPG", alt="dowload app")  
-      
-      
-        
-
-        
+  

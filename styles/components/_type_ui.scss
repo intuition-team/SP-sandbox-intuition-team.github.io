@@ -13,20 +13,31 @@
   }
 
   h2 {
-    font-size: 5em;
+    font-size: 4em;
     line-height: 1;
-    margin-bottom: 0.5em;
-    font-weight: 600;
+    font-weight: 500;
+
+      @media #{$ids__mobile} {
+        font-size: 2.5em;
+    } 
   }
 
+  h2.black{
+      color: rgba(var(--ids__background-RGB), 1);
+    }
+
   h3 {
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: 500;
     margin: 0;
   }
 
+  h4.black{
+    color: rgba(var(--ids__background-RGB), 1);
+  }
+
   p {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 
   
@@ -45,13 +56,10 @@
   }
 
   a.nav-item {
-    font-size: 1.3em;
-    margin-right: 1em;
     transition: color 170ms ease-in-out, background-color 170ms ease-in-out;
   }
 
   a.nav-item-black{
-    margin-right: 1em;
     color: rgba(var(--ids__background-RGB), 1);
     transition: color 170ms ease-in-out, background-color 170ms ease-in-out;
 
@@ -61,10 +69,12 @@
   }
 
   a.ids__button-link {
+      
       background-color: transparent;
-      border: 3px solid rgba(var(--ids__background-RGB), 1);
+      border: 2px solid rgba(var(--ids__background-RGB), 1);
       border-radius: 3em;
-      padding: 1.4em 2em 1.2em 2em;
+      padding: 1em 1.5em;
+      font-size: 0.8em;
       text-transform: uppercase;
       font-weight: 500;
       color: rgba(var(--ids__background-RGB), 1);
@@ -77,10 +87,12 @@
   }
 
   a.ids__button-link-black {
+    
     background-color: transparent;
-    border: 3px solid rgba(var(--ids__text-RGB), 1);
+    border: 2px solid rgba(var(--ids__text-RGB), 1);
     border-radius: 3em;
-    padding: 1.4em 2em 1.2em 2em;
+    padding: 1em 1.5em;
+    font-size: 0.8em;
     text-transform: uppercase;
     font-weight: 500;
     transition: 0.1s background-color linear, 0.1s color linear;

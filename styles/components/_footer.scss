@@ -4,11 +4,7 @@
   width: 100%;
 
 
-  @media (max-width: 1566px){
-
-    // padding: 2em 5em 0 4em;
-
-  }
+  
   
   
   .ids__grid-cell{
@@ -25,9 +21,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  p{
+  h4{
     text-align: center;
-    font-size: 1.8em;
     color:rgba(var(--ids__background-RGB), 1);
     opacity: 0.6;
     &:first-child{
