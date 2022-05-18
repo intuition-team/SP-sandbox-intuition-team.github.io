@@ -1,6 +1,7 @@
 .ids {
 
   h1 {
+    font-family: 'Loos';
     font-size: 5.1em;
     line-height: 0.85;
     font-weight: 400;
@@ -44,28 +45,14 @@
   a {
     transition: color 0.8s ease, background-color 0.8s ease,
     border-color 0.8s ease;
-    border-bottom: none;
-    cursor: pointer;
 
     &:hover {
       transition: color 0s ease, background-color 0s ease;
-      border-bottom: none;
     }
     
   }
 
-  a.nav-item {
-    transition: color 170ms ease-in-out, background-color 170ms ease-in-out;
-  }
-
-  a.nav-item-black{
-    color: rgba(var(--ids__background-RGB), 1);
-    transition: color 170ms ease-in-out, background-color 170ms ease-in-out;
-
-    &:hover {
-      opacity: 0.6;
-    }
-  }
+  
 
   a.button-link {
       
@@ -108,6 +95,7 @@
     border: 1px solid rgba(var(--ids__accent-RGB), 1);
     border-radius: 5em;
     color: white;
+    
     cursor: pointer;
     transition: 0.1s background-color linear, 0.1s color linear;
 

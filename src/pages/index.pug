@@ -7,13 +7,15 @@ block content
   
   .ids__wrapper.ids__full-width 
     .banner(style="background-image: url('/images/main-img-girl.png')")
-      h2 Let’s ride!
+      h1 Let’s ride!
       p Download the Superpedestrian app to get started
       .app_badges
-        a(href="#")
-          img(src="/images/google-play.png", alt="dowload in google play")
-        a(href="#")
-          img(src="/images/app-store-icon.png", alt="dowload in app store")  
+        .app_badge
+          a(href="#")
+            img(src="/images/google-play.png", alt="dowload in google play")
+        .app_badge
+          a(href="#")
+            img(src="/images/app-store-icon.png", alt="dowload in app store")  
 
       
       //- a.ids__button-link Locations
@@ -28,11 +30,11 @@ block content
       //- ABOUT SAFETY
 
   .ids__wrapper.ids__edge-to-edge 
-    .banner(style="background-image: url('/images/girl-scooter-helmet.jpeg')")
+    .banner.on-photo(style="background-image: url('/images/girl-scooter-helmet.jpeg')")
       .ids__stack.S
-      h2.black Ride safe
+      h2 Ride safe
       .ids__stack.XS
-      a.button-link.invert(href="/links/safety") Designed for safety
+      a.ids__button-link(href="/links/safety") Designed for safety
   .ids__stack.M
 
       //- ABOUT LOCATION  
@@ -47,7 +49,7 @@ block content
         .ids__stack.XS
         p and counting…
         .ids__stack.S
-        a.ids__button-link how we work with cities
+        a.ids__button-link How we work with cities
       
       
     

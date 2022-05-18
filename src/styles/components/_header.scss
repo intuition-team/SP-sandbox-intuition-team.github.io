@@ -1,78 +1,101 @@
 header {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   padding: 0.2em 0.5em 0.2em 0.5em;
+  height: 6em;
 }
 
 .logo-container {
   display: block;
-  max-width: 13em;
+  max-width: 10em;
   cursor: pointer;  
 }
 
 .header-img {
   position: relative;
+
 }
 
 nav {
   display: flex;
-  align-items: center;
-  margin-right: 0.3em;
-  a{
-    font-weight: 500; 
-    margin: 0 0.38em;
-  }
-}
+  margin-top: 1em;
 
-.dropdown {
-    overflow: hidden;
+  .nav-item {
     
-    &:hover {
-      .dropdown-content {
-        display: block;
-        transition: 4ms;
-        transition: left 0s .2s linear,transform 0s .2s linear,opacity .2s ease-out;
+    margin-right: 0.8em;
+    transition: color 170ms ease-in-out;
+    z-index: 3;
+
+    a {
+      border-bottom: none;
+      
+      &:hover {
+        border-bottom: none;
       }
     }
   }
-
-  
-
-  .dropdown-content {
-  display: none;
-  position: absolute;
-  margin-left: -1.5em;
-  background-color: rgba(var(--ids__background-RGB), 1);
-  min-width: 9.5em;
-  z-index: 2;
-  transition: left 0s .2s linear,transform 0s .2s linear,opacity .2s ease-out;
-  
-    a{ 
-      padding-top: 0.7em;
-      font-weight: 500;
-      padding-left: 1.5em;
-      padding-right: 1.5em;
-      display: block;
-      text-align: left;
-      opacity: 0.6; 
-
-      &:first-child{
-         margin-top: 1.9em;
-      }
-      &:last-child{
-        padding-bottom:  1.3em;
-      }
-     &:hover{
-      opacity: 1;
-     }
-  }
 }
 
 
-.search{
+
+
+.dropdown {
+  position: relative;
+  
+  .dropdown-caption { 
+    position: relative;
+    
+    margin-right: 0.8em;
+    color: rgba(var(--ids__link-RGB), 1);  
+    z-index: 3;
+  }
+
+  .dropdown-content {
+    position: absolute;
+    left: -.7em;
+    top: -.5em;
+    background-color: rgba(var(--ids__background-RGB), 1);
+    min-width: 9em;
+    border-radius: .3em;
+    box-shadow: 0 .2em 3em 0 rgba(var(--ids__text-RGB), .1);
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+    padding: 2em .2em .7em .7em;
+    transform: translateY(.2em);
+    
+
+    .nav-item {
+      margin-top: .4em;
+    }
+  }
+
+  &:hover {
+    .dropdown-caption {
+      color: rgba(var(--ids__text-RGB), 1);  
+    }
+    .dropdown-content {
+      pointer-events: auto;
+      transition-duration: 0.1s;
+      transform: translateY(0);
+      opacity: 1;  
+      z-index: 2;
+    }
+  }
+}
+
+.search {
+  display: block;
   background-image: url('/images/magnifier.png');
   opacity: 0.5;
   background-size: cover;
   background-position: center;
-  padding: 0.44em;
+  width: 1.1em;
+  height: 1.1em;
+  
+  &:hover {
+    opacity: 1;    
+  }
 }
