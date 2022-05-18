@@ -38,13 +38,16 @@
   --ids__outline-RGB: var(--ids__surface-RGB);
 }
 
-.in-red {
-  --ids__background-RGB: 217, 2, 23;
-  background-color: rgba(var(--ids__background-RGB), 1);
+.invert {
+  // --ids__background-RGB: 0, 0, 0;
+  // background-color: rgba(var(--ids__background-RGB), 1);
+  background-color: transparent;
   --ids__text-RGB: 255, 255, 255;
   color: rgba(var(--ids__text-RGB), 1);
-  --ids__hover-RGB: 255, 45, 45;
-  --ids__link-RGB: 255, 255, 255;
-  --ids__accent-RGB: 255, 0, 0;
+  // --ids__hover-RGB: 255, 45, 45;
+  // --ids__link-RGB: 255, 255, 255;
+  // --ids__accent-RGB: 255, 0, 0;
+  border: 2px solid rgba(var(--ids__text-RGB), 1);
+
 }
 
