@@ -67,7 +67,7 @@
     }
   }
 
-  a.ids__button-link {
+  a.button-link {
       
       background-color: transparent;
       // border: 2px solid rgba(var(--ids__background-RGB), 1);
@@ -79,10 +79,10 @@
       // color: rgba(var(--ids__background-RGB), 1);
       transition: 0.1s background-color linear, 0.1s color linear;
     
-      &:hover {  
-      color: rgba(var(--ids__text-RGB), 1);
-      background-color: rgba(var(--ids__background-RGB), 1);
-    }
+    //   &:hover {  
+    //   color: rgba(var(--ids__text-RGB), 1);
+    //   background-color: rgba(var(--ids__background-RGB), 1);
+    // }
   }
 
   // a.ids__button-link-black {

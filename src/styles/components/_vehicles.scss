@@ -1,14 +1,29 @@
 
-table{
-    th{
-        border-bottom: 3px solid black;
-        font-size: 3.3em;
-        font-family: monospace;
+table {
+    max-width: 55em;
+    border: 2px solid rgba(var(--ids__text-RGB), 1);
+
+    th {
+        border-bottom: 2px solid rgba(var(--ids__text-RGB), 1);
+        // font-size: 3.3em;
+        h2{
+            padding-left: 0.3em;
+            padding-top: 0.3em;
+            font-family: monospace;
+        }
+        
     }
-    tr{
-        td{
+
+    tr {
+        td {
+            padding-left: 0.3em;
+            font-size: 1.5em; 
+            border-right: 2px solid rgba(var(--ids__text-RGB), 1);   
             
         }
+        .td-img {
+                border-right: none;
+            }
     }
     
     
@@ -17,5 +32,3 @@ table{
     padding: 0;
     border: none;
 }
-
-    
