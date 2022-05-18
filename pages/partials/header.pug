@@ -5,27 +5,42 @@ header
     img(src="/images/SP-Logo-Black.svg", alt="Superpedestrian logo")   
   nav 
     .dropdown
-      a.nav-item(href='#') Company
+      .dropdown-caption Company
       .dropdown-content
-        a(href='#') About
-        a(href='#') Team
-        a(href='#') Sustainability
-        a(href='#') Reports
+        .nav-item
+          a(href='/') About
+        .nav-item
+          a(href='/') Team
+        .nav-item
+          a(href='/') Sustainability
+        .nav-item
+          a(href='/') Reports
+    
     .dropdown
-      a.nav-item(href='#') Ride
+      .dropdown-caption Ride
       .dropdown-content
-        a(href='#') Locations
-        a(href="/links/how-to-ride") How to Ride
-        a(href='/links/safety') Safety
-        a(href='#') Rider Programs
+        .nav-item
+          a(href='/') Locations
+        .nav-item
+          a(href="/how-to-ride") How to Ride
+        .nav-item
+          a(href='/safety') Safety
+        .nav-item
+          a(href='/') Rider Programs
+    
     .dropdown
-      a.nav-item(href='#') Tech
+      .dropdown-caption Tech
       .dropdown-content
-        a(href='/links/vehicles') Vehicles
-        a(href='#') What's Inside
-    a.nav-item(href='#') Cities
-    a.nav-item(href='#') Blog 
-    a.search  
+        .nav-item
+          a(href='/vehicles') Vehicles
+        .nav-item
+          a(href='/') What's Inside
+    .nav-item
+      a(href='/') Cities
+    .nav-item
+      a(href='/') Blog
+    .nav-item
+      a.search(href='/')
     
       
   
