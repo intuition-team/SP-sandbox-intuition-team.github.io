@@ -23,21 +23,10 @@
     } 
   }
 
-  h2.black{
-      color: rgba(var(--ids__background-RGB), 1);
-    }
 
   h3 {
-    font-size: 2em;
-    
+    font-size: 2em;    
     margin: 0;
-  }
-
-  h4.black{
-    color: rgba(var(--ids__background-RGB), 1);
-  }
-
-  p {
   }
 
   
@@ -55,55 +44,11 @@
   
 
   a.button-link {
-      
       background-color: transparent;
-      // border: 2px solid rgba(var(--ids__background-RGB), 1);
-      // border-radius: 3em;
       padding: 1em 1.5em;
-      // font-size: 0.8em;
-      // text-transform: uppercase;
       font-weight: 500;
-      // color: rgba(var(--ids__background-RGB), 1);
       transition: 0.1s background-color linear, 0.1s color linear;
-    
-    //   &:hover {  
-    //   color: rgba(var(--ids__text-RGB), 1);
-    //   background-color: rgba(var(--ids__background-RGB), 1);
-    // }
   }
 
-  // a.ids__button-link-black {
-    
-  //   background-color: transparent;
-  //   border: 2px solid rgba(var(--ids__text-RGB), 1);
-  //   border-radius: 3em;
-  //   padding: 1em 1.5em;
-  //   font-size: 0.8em;
-  //   text-transform: uppercase;
-  //   font-weight: 500;
-  //   transition: 0.1s background-color linear, 0.1s color linear;
-    
-  //   &:hover {  
-  //     background-color: rgba(var(--ids__text-RGB), 1);
-  //     color: rgba(var(--ids__background-RGB), 1);
-  //   }
-  // }
-
-  a.lead {
-    font-size: 1.1em;
-    padding: 0.5em 0.8em;
-    border: 1px solid rgba(var(--ids__accent-RGB), 1);
-    border-radius: 5em;
-    color: white;
-    
-    cursor: pointer;
-    transition: 0.1s background-color linear, 0.1s color linear;
-
-    &:hover {
-      transition: color 0.5s ease, background-color 0.9s ease, border-color 0s ease;
-      background-color: rgba(var(--ids__text-RGB), 1);
-      color: rgba(var(--ids__hover-RGB), 1);
-    }
-  }
 }
 
