@@ -1,34 +1,91 @@
+  
+.table {
+    border: 0.14em solid rgba(var(--ids__text-RGB), 1);
+    max-width: 40em;  
 
-table {
-    max-width: 55em;
-    border: 2px solid rgba(var(--ids__text-RGB), 1);
+    .table-title {
+    font-family: monospace;
+    border-bottom: 0.1em solid rgba(var(--ids__text-RGB), 1); 
+    padding: 0.3em 3em 0.3em 0.4em;
+    font-weight: 600;
+    }
+ }
 
-    th {
-        border-bottom: 2px solid rgba(var(--ids__text-RGB), 1);
-        // font-size: 3.3em;
-        h2{
-            padding-left: 0.3em;
-            padding-top: 0.3em;
-            font-family: monospace;
+.table-body {
+     display: flex;
+ }
+
+ 
+
+.table-description {
+
+    .cell {
+        border-bottom: 0.14em solid rgba(var(--ids__text-RGB), 1);  
+        padding: 0.6em 0 0.1em 0.7em;
+        font-weight: 500;
+
+        &:last-child {
+            border: none;
         }
+    }
+  
+
+    .big-description {
+        padding: 0.8em 5em 0.3em 0.7em;
+        line-height: 0.7em;
+        letter-spacing: 0.02em;
+        font-size: 1.3em;
+
+        mark {
+            background-color: rgba(var(--ids__accent-RGB), 1);
+            display: inline-block;
+            line-height: 0.5em;
+        }
+    }
+
+   
+}
+
+.table-img{
+    border-left: 0.14em solid rgba(var(--ids__text-RGB), 1); 
+    max-width: 19em; 
+}
+
+
+
+
+
+
+// table {
+//     max-width: 55em;
+//     border: 2px solid rgba(var(--ids__text-RGB), 1);
+
+//     th {
+//         border-bottom: 2px solid rgba(var(--ids__text-RGB), 1);
+//         // font-size: 3.3em;
+//         h2{
+//             padding-left: 0.3em;
+//             padding-top: 0.3em;
+//             font-family: monospace;
+//         }
         
-    }
+//     }
 
-    tr {
-        td {
-            padding-left: 0.3em;
-            font-size: 1.5em; 
-            border-right: 2px solid rgba(var(--ids__text-RGB), 1);   
+//     tr {
+//         td {
+//             padding-left: 0.3em;
+//             font-size: 1.5em; 
+//             border-right: 2px solid rgba(var(--ids__text-RGB), 1);   
             
-        }
-        .td-img {
-                border-right: none;
-            }
-    }
+//         }
+//         .td-img {
+//                 border-right: none;
+//             }
+//     }
     
     
-}
-.ids__table-td {
-    padding: 0;
-    border: none;
-}
+// }
+// .ids__table-td {
+//     padding: 0;
+//     border: none;
+// }
