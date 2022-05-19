@@ -39,14 +39,14 @@
         mark {
             background-color: rgba(var(--ids__accent-RGB), 1);
             display: inline-block;
-            line-height: 0.5em;
+            line-height: 0.4em;
         }
     }
 
    
 }
 
-.table-img{
+.table-img {
     border-left: 0.14em solid rgba(var(--ids__text-RGB), 1); 
     max-width: 19em; 
 }
@@ -56,36 +56,3 @@
 
 
 
-// table {
-//     max-width: 55em;
-//     border: 2px solid rgba(var(--ids__text-RGB), 1);
-
-//     th {
-//         border-bottom: 2px solid rgba(var(--ids__text-RGB), 1);
-//         // font-size: 3.3em;
-//         h2{
-//             padding-left: 0.3em;
-//             padding-top: 0.3em;
-//             font-family: monospace;
-//         }
-        
-//     }
-
-//     tr {
-//         td {
-//             padding-left: 0.3em;
-//             font-size: 1.5em; 
-//             border-right: 2px solid rgba(var(--ids__text-RGB), 1);   
-            
-//         }
-//         .td-img {
-//                 border-right: none;
-//             }
-//     }
-    
-    
-// }
-// .ids__table-td {
-//     padding: 0;
-//     border: none;
-// }
