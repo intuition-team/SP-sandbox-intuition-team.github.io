@@ -1,0 +1,48 @@
+
+.safety-page {
+    a {
+        font-weight: 600;
+    }
+}
+    
+#safe-streets {
+    
+    
+    .ids__grid {
+         
+        .ids__grid-cell {
+            
+            img {
+                max-width: 23em;
+            }
+        }
+    }
+}
+
+#safe-parking {
+    
+    
+        .ids__grid-cell {
+
+        min-width: 15em;
+            
+            img {
+                max-width: 13em;
+            }
+        }
+    
+}
+
+#safe-partners {
+    
+    .ids__grid {
+        align-items: center; 
+
+        .ids__grid-cell {
+            
+            padding: 0.3em 1.5em;
+        }
+    }
+
+}
+
