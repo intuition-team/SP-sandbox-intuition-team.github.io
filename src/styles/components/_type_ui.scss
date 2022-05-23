@@ -14,6 +14,7 @@
   }
 
   h2 {
+    font-family: 'Loos';
     font-size: 4em;
     line-height: 1;
     font-weight: 500;
@@ -50,5 +51,15 @@
       transition: 0.1s background-color linear, 0.1s color linear;
   }
 
+  a.ids__button-link {
+
+    &:hover{
+      background-color: #c9ec04 ;
+  }
+
 }
+
+
+}
+
 

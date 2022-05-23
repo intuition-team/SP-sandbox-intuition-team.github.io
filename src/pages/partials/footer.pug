@@ -2,30 +2,43 @@ footer.on-black
   .ids__wrapper
   
     .ids__grid.ids__grid-size-S.ids__grid-with-gaps
-      .ids__grid-cell        
-        a(href="") Press
-        a(href="") Careers
+
       .ids__grid-cell
-        a(href="") Privacy Policy
-        a(href="") Cookie Policy
-        a(href="") Terms & Conditions
+        .nav       
+          a(href="") Press
+        .nav
+          a(href="") Careers
+      .ids__grid-cell
+        .nav
+          a(href="") Privacy Policy
+        .nav
+          a(href="") Cookie Policy
+        .nav
+          a(href="") Terms & Conditions
         
       .ids__grid-cell
-        a(href="") Contact
-        a(href="") Get Help
-      .ids__grid-cell
-        a(href="") Copenhagen Wheel
-      .ids__grid-cell
-        a(href="") Select Language
+        .nav
+          a(href="") Contact
+        .nav
+          a(href="") Get Help
 
-    .ids__stack.M
+      .ids__grid-cell
+        .nav
+          a(href="") Copenhagen Wheel
+
+      .ids__grid-cell
+        .nav
+          a(href="") Select Language
+
+    .ids__stack.S
 
     .footer-address
       h4 Superpedestrian HQ
-      h4 84 Hamilton St, Cambridge, MA 02139
-      .ids__stack.M
+      p 84 Hamilton St, Cambridge, MA 02139
+      .ids__stack.S
 
       .footer-badges
+        use.sqs-use--icon(xlink:href="#instagram-unauth-icon") 
         a(href="https://www.instagram.com")
           img(src="/images/icon-instagram-w.png", alt="instagram logo")
         a(href="https://www.facebook.com")

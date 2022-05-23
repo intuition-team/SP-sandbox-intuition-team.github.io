@@ -26,56 +26,67 @@ html
       include /partials/header
     
 
-    .ids__wrapper.ids__text
+    .ids__wrapper.ids__text.ids__full-width
         .ids__stack.XS
-        h2 How to ride
-        .ids__stack.XS
-    .ids__full-width
-        figure 
-            img(src="/images/app-phone.jpeg", alt="app-phone")
-    .ids__stack.XS
-    .ids__wrapper.ids__text
-        .ids__grid
-            .ids__grid-cell
-                p Download the Superpedestrian app. Follow the on-screen prompts to sign up. You’ll need a credit or debit card to get started riding. In some cities, a photo ID is required to verify your age.
-                .ids__stack.XS
-                .ids__grid-cell
-                    figure.about-app_icons
-                        img(src="/images/google-play.png", alt="dowload in google play")   
-                        img(src="/images/app-store-icon.png", alt="dowload in app store")  
+        h1 How to ride
+
+    .ids__wrapper.ids__full-width
+        .banner.on-photo.parallax-img(style="background-image: url('/images/app-phone.jpeg')")
+            .ids__stack.M
+            .ids__text
+                h2 ➊ Sign up
     
-    .ids__stack.S
-
-
-    .ids__full-width
-        figure 
-            img(src="/images/girl-scooter-helmet.jpeg", alt="app-phone")
     .ids__stack.XS
+
     .ids__wrapper.ids__text
-        .ids__grid
-            .ids__grid-cell
-                p Find a scooter near you by using the map in the Superpedestrian app. Then scan the scooter’s QR code with the app to start your ride
-                .ids__stack.XS
 
-    .ids__full-width
-        figure 
-            img(src="/images/app-phone.jpeg", alt="app-phone")
+        p Download the Superpedestrian app. Follow the on-screen prompts to sign up. You’ll need a credit or debit card to get started riding. In some cities, a photo ID is required to verify your age.
+        include /partials/app-badges
+        
+    
+    .ids__stack.M
+
+
+    .ids__wrapper.ids__full-width
+        .banner.on-photo.parallax-img(style="background-image: url('/images/girl-scooter-helmet.jpeg')")
+            .ids__stack.M
+            .ids__text
+                h2 ➋ Find a scooter and scan to unlock
+
     .ids__stack.XS
+
     .ids__wrapper.ids__text
-        .ids__grid
-            .ids__grid-cell
-                ul Before you take off, follow these safety tips:
-                    .ids__stack.XS
-                    li Always wear a helmet
-                    li Only one person per scooter 
-                    li Never ride under the influence
-                    li You must be 18+ to ride
-                .ids__stack.XS
+        p Find a scooter near you by using the map in the Superpedestrian app. Then scan the scooter’s QR code with the app to start your ride
 
-    .ids__full-width
-        figure 
-            img(src="/images/girl-scooter-helmet.jpeg", alt="app-phone")
-    .ids__stack.XS
+    .ids__stack.M
+
+
+    .ids__wrapper.ids__full-width
+        .banner.on-photo.parallax-img(style="background-image: url('/images/app-phone.jpeg')")
+            .ids__stack.M
+            .ids__text
+                h2 ➌ Gear up for a safe ride
+
+    .ids__stack.XS 
+
+    .ids__wrapper.ids__text
+        p Before you take off, follow these safety tips:
+        ul   
+            li Always wear a helmet
+            li Only one person per scooter 
+            li Never ride under the influence
+            li You must be 18+ to ride
+                
+    .ids__stack.M          
+
+
+    .ids__wrapper.ids__full-width
+        .banner.on-photo.parallax-img(style="background-image: url('/images/girl-scooter-helmet.jpeg')")
+            .ids__stack.M
+            .ids__text
+                h2 ➍ Get going!
+    
+        
     .ids__wrapper.ids__text
         .ids__grid.XL
             .ids__grid-cell
@@ -91,24 +102,28 @@ html
                     strong Brake
                 p When you’re ready to slow down, release the throttle and gently squeeze both hand brakes.
 
-    .ids__stack.S
-    .ids__full-width
-        figure 
-            img(src="/images/app-phone.jpeg", alt="app-phone")
-    .ids__stack.XS
-    .ids__wrapper.ids__text
-        .ids__grid
-            .ids__grid-cell
-                ul When you reach your destination, find a suitable parking spot! 
-                    .ids__stack.XS
-                    li Use the kickstand to park upright
-                    li Keep walkways clear 
-                    li Don’t block curb cuts, access ramps, doors, or loading docks
-                    li Keep bus stops clear
+    .ids__stack.M
 
+
+    .ids__wrapper.ids__full-width
+        .banner.on-photo.parallax-img(style="background-image: url('/images/app-phone.jpeg')")
+            .ids__stack.M
+            .ids__text
+                h2 ➎ Park safely 
+
+    .ids__stack.XS
+
+    .ids__wrapper.ids__text
+        p  When you reach your destination, find a suitable parking spot! 
+        ul 
+            li Use the kickstand to park upright
+            li Keep walkways clear 
+            li Don’t block curb cuts, access ramps, doors, or loading docks
+            li Keep bus stops clear
 
 
     .ids__stack.M
+
   block footer
     include /partials/footer
 

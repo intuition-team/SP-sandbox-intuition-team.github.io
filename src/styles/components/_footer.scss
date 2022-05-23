@@ -1,11 +1,15 @@
 
 footer {
   padding-top: 2em;
+  
 
   .ids__grid-cell  {
-    display: flex;
-    flex-direction: column;
-    line-height: 2em;
+    
+    line-height: 1.8em;
+
+      &:last-of-type {
+        max-width: 7em;
+      }
   }
 }
 
@@ -13,9 +17,15 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  line-height: 0.5em;
   
   h4 {
     text-align: center;
+    opacity: 0.6;
+    font-weight: 450;
+  }
+
+  p {
     opacity: 0.6;
   }
 }
