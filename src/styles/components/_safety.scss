@@ -21,34 +21,54 @@
         }
     }
 }
-    
-#safe-streets {
-    
-    
-    .ids__grid {
-         
-        .ids__grid-cell {
-            
-            img {
-                max-width: 23em;
-            }
-        }
+
+.text-container {
+     h3 {
+        margin-bottom: 0.5em;
+    }
+    p {
+        margin-bottom: 0.5em;
     }
 }
 
-#safe-parking {
-    
-    
-        .ids__grid-cell {
+#safe-riders {   
 
-        min-width: 15em;
-            
-            img {
-                max-width: 13em;
-            }
-        }
-    
+    .safe-riders-content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    figure {
+        max-width: 30em;
+    }
+
 }
+    
+#safe-streets {
+    
+    .safe-streets-content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    figure {
+        max-width: 30em;
+    }
+}
+
+#safe-vehicles {
+
+    .safe-vehicles-content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    figure {
+        max-width: 30em;
+    }
+
+}
+
 
 #safe-partners {
     
@@ -63,3 +83,26 @@
 
 }
 
+.brand-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 8vw);
+    grid-gap: 0.7em;
+    justify-items: start;
+    align-items: center;
+
+        img {
+            width: 5em;
+            height: 4em;
+            object-fit: contain;
+        }
+
+    }
+
+    .gallery-item {
+
+        img {
+            width: 6em;
+            height: 5em;
+        }
+    }
