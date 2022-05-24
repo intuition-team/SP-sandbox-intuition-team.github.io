@@ -8,16 +8,24 @@
 .nav-safety {
     display: inline-flex;
     background-color: rgba(var(--ids__accent-RGB), 1);
-    padding: 0.2em 0.4em;
+    padding: 0.4em 0.4em;
     border-radius: 0.2em;
 
     .nav-block {
-     
         margin-right: 0.7em;
 
-        &:hover{
-            background-color: #c9ec04 ;
-            border-radius: 0.2em;   
+        a {
+            border-bottom: none;
+        }
+
+        &:first-of-type {
+            padding-left: 1.2em;
+
+        }
+
+        &:last-of-type {
+            padding-right: 0.5em;
+
         }
     }
 }

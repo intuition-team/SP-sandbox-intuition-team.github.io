@@ -5,7 +5,7 @@
 
     .table-title {
     font-family: monospace;
-    border-bottom: 0.1em solid rgba(var(--ids__text-RGB), 1); 
+    border-bottom: 0.07em solid rgba(var(--ids__text-RGB), 1); 
     padding: 0.3em 3em 0.3em 0.4em;
     font-weight: 600;
     }
@@ -35,6 +35,8 @@
         line-height: 0.7em;
         letter-spacing: 0.02em;
         font-size: 1.3em;
+        border-bottom: 0.11em solid rgba(var(--ids__text-RGB), 1); 
+
 
         mark {
             background-color: rgba(var(--ids__accent-RGB), 1);

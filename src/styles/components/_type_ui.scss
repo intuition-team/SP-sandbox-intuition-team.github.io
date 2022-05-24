@@ -56,8 +56,38 @@
     &:hover{
       background-color: rgba(200, 235, 0, 1);
   }
-
 }
+
+
+  .manual {
+    display: flex;
+    margin-top: 16em;
+
+    .circle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 4.2em;
+      width: 4.2em;
+      max-height: 4.2em;
+      max-width: 4.2em;
+      border: 2px solid white;
+      border-radius: 50%;
+      margin-right: 0.5em;
+      
+
+        .circle-number {
+          font-family: 'Loos';
+          font-size: 4em;
+      }
+    }
+
+    .circle.for-wide {
+      height: 4.5em;
+      width: 8em;
+    }
+
+  }
 
 
 }

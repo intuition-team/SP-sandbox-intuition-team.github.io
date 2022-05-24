@@ -29,8 +29,8 @@ html
 
 
 
-    .ids__wrapper.ids__text.ids__full-width
-
+    .ids__wrapper
+        .ids__text
         .ids__stack.XS
         h1 How to ride
 
@@ -38,14 +38,18 @@ html
         .banner.on-photo.parallax-img(style="background-image: url('/images/app-phone.jpeg')")
             .ids__stack.M
             .ids__text
-                h2 ➊ Sign up
+                .manual
+                    .circle
+                        .circle-number 1 
+                    .manual-text
+                        h2 Sign up
     
     .ids__stack.XS
 
-    .ids__wrapper.ids__text
-
-        p Download the Superpedestrian app. Follow the on-screen prompts to sign up. You’ll need a credit or debit card to get started riding. In some cities, a photo ID is required to verify your age.
-        include /partials/app-badges
+    .ids__wrapper
+        .ids__text
+            p Download the Superpedestrian app. Follow the on-screen prompts to sign up. You’ll need a credit or debit card to get started riding. In some cities, a photo ID is required to verify your age.
+            include /partials/app-badges
         
     
     .ids__stack.M
@@ -55,12 +59,17 @@ html
         .banner.on-photo.parallax-img(style="background-image: url('/images/find-scooter.jpeg')")
             .ids__stack.M
             .ids__text
-                h2 ➋ Find a scooter and scan to unlock
+                .manual
+                    .circle.for-wide
+                        .circle-number 2 
+                    .manual-text
+                        h2 Find a scooter and scan to unlock
 
     .ids__stack.XS
 
-    .ids__wrapper.ids__text
-        p Find a scooter near you by using the map in the Superpedestrian app. Then scan the scooter’s QR code with the app to start your ride
+    .ids__wrapper
+        .ids__text
+            p Find a scooter near you by using the map in the Superpedestrian app. Then scan the scooter’s QR code with the app to start your ride
 
     .ids__stack.M
 
@@ -69,18 +78,23 @@ html
         .banner.on-photo.parallax-img(style="background-image: url('/images/Gear-up.jpeg')")
             .ids__stack.M
             .ids__text
-                h2 ➌ Gear up for a safe ride
+                .manual
+                    .circle.for-wide
+                        .circle-number 3 
+                    .manual-text
+                        h2 Gear up for a safe ride
 
     .ids__stack.XS 
 
-    .ids__wrapper.ids__text
-        p Before you take off, follow these safety tips:
-        ul   
-            li Always wear a helmet
-            li Only one person per scooter 
-            li Never ride under the influence
-            li You must be 18+ to ride
-                
+    .ids__wrapper
+        .ids__text
+            p Before you take off, follow these safety tips:
+            ul   
+                li Always wear a helmet
+                li Only one person per scooter 
+                li Never ride under the influence
+                li You must be 18+ to ride
+                    
     .ids__stack.M          
 
 
@@ -88,23 +102,28 @@ html
         .banner.on-photo.parallax-img(style="background-image: url('/images/girl-beige-2.jpeg')")
             .ids__stack.M
             .ids__text
-                h2 ➍ Get going!
+                .manual
+                    .circle
+                        .circle-number 4 
+                    .manual-text
+                        h2 Get going!
     
         
-    .ids__wrapper.ids__text
-        .ids__grid.XL
-            .ids__grid-cell
-                p 
-                    strong Kick
-                p Step on the scooter with one foot, and push off the ground with the other. The scooter must be rolling to start.
-            .ids__grid-cell
-                p 
-                    strong Throttle
-                p Once rolling, use your right thumb to slowly press down on the throttle and accelerate the scooter.
-            .ids__grid-cell
-                p 
-                    strong Brake
-                p When you’re ready to slow down, release the throttle and gently squeeze both hand brakes.
+    .ids__wrapper
+        .ids__text
+            .ids__grid.L.ids__grid-with-gaps
+                .ids__grid-cell
+                    p 
+                        strong Kick
+                    p Step on the scooter with one foot, and push off the ground with the other. The scooter must be rolling to start.
+                .ids__grid-cell
+                    p 
+                        strong Throttle
+                    p Once rolling, use your right thumb to slowly press down on the throttle and accelerate the scooter.
+                .ids__grid-cell
+                    p 
+                        strong Brake
+                    p When you’re ready to slow down, release the throttle and gently squeeze both hand brakes.
 
     .ids__stack.M
 
@@ -113,17 +132,22 @@ html
         .banner.on-photo.parallax-img(style="background-image: url('/images/parking-man.jpeg')")
             .ids__stack.M
             .ids__text
-                h2 ➎ Park safely 
+                .manual
+                    .circle
+                        .circle-number 5 
+                    .manual-text
+                        h2 Park safely 
 
     .ids__stack.XS
 
-    .ids__wrapper.ids__text
-        p  When you reach your destination, find a suitable parking spot! 
-        ul 
-            li Use the kickstand to park upright
-            li Keep walkways clear 
-            li Don’t block curb cuts, access ramps, doors, or loading docks
-            li Keep bus stops clear
+    .ids__wrapper
+        .ids__text
+            p  When you reach your destination, find a suitable parking spot! 
+            ul 
+                li Use the kickstand to park upright
+                li Keep walkways clear 
+                li Don’t block curb cuts, access ramps, doors, or loading docks
+                li Keep bus stops clear
 
 
     .ids__stack.M
