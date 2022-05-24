@@ -4,6 +4,23 @@
         font-weight: 600;
     }
 }
+
+.nav-safety {
+    display: inline-flex;
+    background-color: rgba(var(--ids__accent-RGB), 1);
+    padding: 0.2em 0.4em;
+    border-radius: 0.2em;
+
+    .nav-block {
+     
+        margin-right: 0.7em;
+
+        &:hover{
+            background-color: #c9ec04 ;
+            border-radius: 0.2em;   
+        }
+    }
+}
     
 #safe-streets {
     
