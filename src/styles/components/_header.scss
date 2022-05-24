@@ -9,8 +9,17 @@ header {
 .logo-container {
   display: block;
   max-width: 10em;
-  cursor: pointer;  
 }
+
+a.logo-container {
+  border-bottom: 0;
+  
+  &:hover {    
+    border-bottom: 0;
+    opacity: .9;
+  }
+}
+
 
 .header-img {
   position: relative;
