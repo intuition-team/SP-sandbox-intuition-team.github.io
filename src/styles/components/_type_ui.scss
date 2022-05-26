@@ -61,7 +61,6 @@
 
   .manual {
     display: flex;
-    margin-top: 16em;
 
     .circle {
       display: flex;
@@ -84,9 +83,23 @@
 
     .circle.for-wide {
       height: 4.5em;
-      width: 8em;
+      width: 14em;
+      max-height: 4.5em;
+      max-width: 4.5em;
     }
 
+  }
+
+  .up-for-1 {
+    margin-top: 20em;
+  }
+
+  .up-for-2 {
+    margin-top: 17em;
+  }
+
+  .up-for-3 {
+    margin-top: 13em;
   }
 
 
