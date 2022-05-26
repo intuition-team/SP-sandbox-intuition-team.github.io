@@ -1,0 +1,37 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.ids {
+  .ids__wrapper {
+    max-width: 80em;
+
+    &.ids__full-width {
+      max-width: 90em;
+    }
+  }
+}
+
+.weight-fix {
+  font-weight: normal;
+  font-feature-settings: "isol";
+}
+
+// ----------------TEXT
+/* Круги открывающие */
+.circles_int {
+  font-feature-settings: "ss04", "init";
+}
+/* Середины */
+.middles {
+  font-feature-settings: "medi";
+}
+/* Круги закрывающие */
+.circles_fin {
+  font-feature-settings: "ss04", "fina";
+}
+
+

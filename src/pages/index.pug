@@ -1,0 +1,62 @@
+extends /layouts/main.pug
+
+block meta
+  +meta(title="Superpedestrian", description="Superpedestrian website")
+
+block content
+  
+  .ids__wrapper.ids__full-width 
+    .banner(style="background-image: url('/images/main-img-girl.png')")
+      h1 Let’s ride!
+      p Download the Superpedestrian app to get started
+      
+      include /partials/app-badges
+      
+
+  .ids__stack.M
+
+
+  //- ABOUT LOCATION  
+
+  .ids__wrapper.ids__full-width 
+    .banner(style="background-image: url('/images/SP_Map.jpeg')")
+      h3 10 countries<br>60 cities 
+      p and counting…
+      a.ids__button-link How we work with cities
+    
+  
+  .ids__stack.M 
+
+
+  //- ABOUT SAFETY
+
+  .ids__wrapper.ids__full-width 
+    .banner.on-photo(style="background-image: url('/images/girl-scooter-helmet.jpeg')")
+      .ids__stack.S
+      h2 Ride safe
+      .ids__stack.XS
+      a.ids__button-link(href="/safety") Designed for safety
+    .ids__stack.M 
+
+
+  //- ABOUT APP
+    
+  .ids__wrapper
+    .ids__stack.S
+    figure
+      img(src="/images/4screen.png", alt="dowload in google play")   
+
+      
+
+  
+         
+    
+  .ids__stack.M
+  
+
+      
+
+
+
+
+  

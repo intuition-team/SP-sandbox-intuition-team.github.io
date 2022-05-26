@@ -1,0 +1,48 @@
+
+footer {
+  padding-top: 2em;
+  
+
+  .ids__grid-cell  {
+    
+    line-height: 1.8em;
+
+      &:last-of-type {
+        max-width: 7em;
+      }
+  }
+}
+
+.footer-address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 0.5em;
+  
+  h4 {
+    text-align: center;
+    opacity: 0.6;
+    font-weight: 450;
+  }
+
+  p {
+    opacity: 0.6;
+  }
+}
+
+.footer-badges {
+
+  display: flex; 
+
+     a {
+        border-bottom: none;
+        margin-right: 0.4em;
+
+
+          img {
+            max-width: 1.5em;
+
+          }
+      }
+}
+

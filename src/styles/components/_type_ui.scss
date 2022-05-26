@@ -1,0 +1,95 @@
+.ids {
+
+  h1 {
+    font-family: 'Loos';
+    font-size: 5.1em;
+    line-height: 0.85;
+    font-weight: 400;
+    letter-spacing: -0.015em;
+    -webkit-text-stroke: 0.002em #40413e;
+
+    @media #{$ids__mobile} {
+      font-size: 3em;
+    }
+  }
+
+  h2 {
+    font-family: 'Loos';
+    font-size: 4em;
+    line-height: 1;
+    font-weight: 500;
+
+      @media #{$ids__mobile} {
+        font-size: 2.5em;
+    } 
+  }
+
+
+  h3 {
+    font-size: 2em;    
+    margin: 0;
+  }
+
+  
+
+  a {
+    transition: color 0.8s ease, background-color 0.8s ease,
+    border-color 0.8s ease;
+
+    &:hover {
+      transition: color 0s ease, background-color 0s ease;
+    }
+    
+  }
+
+  
+
+  a.button-link {
+      background-color: transparent;
+      padding: 1em 1.5em;
+      font-weight: 500;
+      transition: 0.1s background-color linear, 0.1s color linear;
+  }
+
+  a.ids__button-link {
+
+    &:hover{
+      background-color: rgba(200, 235, 0, 1);
+  }
+}
+
+
+  .manual {
+    display: flex;
+    margin-top: 16em;
+
+    .circle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 4.2em;
+      width: 4.2em;
+      max-height: 4.2em;
+      max-width: 4.2em;
+      border: 2px solid white;
+      border-radius: 50%;
+      margin-right: 0.5em;
+      
+
+        .circle-number {
+          font-family: 'Loos';
+          font-size: 4em;
+      }
+    }
+
+    .circle.for-wide {
+      height: 4.5em;
+      width: 8em;
+    }
+
+  }
+
+
+}
+
+

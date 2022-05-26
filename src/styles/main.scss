@@ -1,0 +1,64 @@
+@import "node_modules/@intuition.team/ids/ids";
+
+@import "base/all";
+@import "components/all";
+@import "project/all";
+
+// настройка IDS https://github.com/intuition-team/ids
+:root,
+.base-colours {
+  --ids__font: 'Roboto', sans-serif; // "Gate A1", "Cabin",
+  --ids__density: 1.3;
+
+  --type-scale-desktop: 1.5; //коэффициент увеличения шрифта десктоп
+  --font-size-min: 18; //размер шрифта мин десктоп
+  --font-size-max: 24; //размер шрифта макс десктоп
+
+  --type-scale-mobile: 1.333; //коэффициент увеличения шрифта телефон
+  --font-size-min-mobile: 17; //размер шрифта мин телефон
+  --font-size-max-mobile: 17; //размер шрифта макс телефон
+
+  //цвета
+  --ids__background-RGB: 255,255,255;
+  --ids__text-RGB: 0, 0, 0;
+  --ids__hover-RGB:  0, 0, 0;
+  --ids__link-RGB: 120, 120, 120;
+  --ids__accent-RGB: 217, 255, 0;
+  --ids__main-RGB: var(--ids__accent-RGB);
+  --ids__surface-RGB: 245, 245, 245;
+  --ids__error-RGB: 240, 84, 95;
+  --ids__success-RGB: 84, 180, 140;
+  --ids__mark-RGB: 255, 248, 128;
+  --ids__code-RGB: 200, 0, 0;
+
+  --ids__on-main-RGB: var(--ids__background-RGB);
+  --ids__on-accent-RGB: 0, 0, 0;
+  --ids__on-surface-RGB: var(--ids__text-RGB);
+
+  --ids__outline-RGB: var(--ids__surface-RGB);
+}
+
+.on-photo {
+  
+  --ids__background-RGB: 0, 0, 0;
+  background-color: rgba(var(--ids__background-RGB), 1);
+  
+  --ids__text-RGB: 255, 255, 255;
+  color: rgba(var(--ids__text-RGB), 1);
+
+
+}
+
+.on-black {
+  
+  --ids__background-RGB: 15, 15, 15 ;
+  background-color: rgba(var(--ids__background-RGB), 1);
+  
+  --ids__text-RGB: 150, 150, 150;
+  color: rgba(var(--ids__text-RGB), 1);
+
+  --ids__link-RGB: 210, 210, 210;
+  --ids__hover-RGB: 255, 255, 255;
+
+}
+

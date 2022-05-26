@@ -1,0 +1,47 @@
+include /mixins/a
+
+header
+  +a.logo-container(href="/")
+    img(src="/images/SP-Logo-Black.svg", alt="Superpedestrian logo")   
+  nav 
+    .dropdown
+      .dropdown-caption Company
+      .dropdown-content
+        .nav-item
+          a(href='/') About
+        .nav-item
+          a(href='/') Team
+        .nav-item
+          a(href='/') Sustainability
+        .nav-item
+          a(href='/') Reports
+    
+    .dropdown
+      .dropdown-caption Ride
+      .dropdown-content
+        .nav-item
+          a(href='/') Locations
+        .nav-item
+          a(href="/how-to-ride") How to Ride
+        .nav-item
+          a(href='/safety') Safety
+        .nav-item
+          a(href='/') Rider Programs
+    
+    .dropdown
+      .dropdown-caption Tech
+      .dropdown-content
+        .nav-item
+          a(href='/vehicles') Vehicles
+        .nav-item
+          a(href='/') What's Inside
+    .nav-item
+      a(href='/') Cities
+    .nav-item
+      a(href='/') Blog
+    .nav-item
+      a.search(href='/')
+    
+      
+  
+  

@@ -1,0 +1,24 @@
+.app_badges {
+    display: flex;
+    margin-top: .2em;
+  
+    @media #{$ids__mobile} {
+      max-width: 13.5em;
+    } 
+    .app_badge {
+      margin-right: .5em;
+      width: 9em;
+      
+      a {
+        img {
+          position: relative;
+        }
+        &:hover {
+          img {
+            top: -0.1em;
+          }
+        }
+      }
+    }
+  
+  }
