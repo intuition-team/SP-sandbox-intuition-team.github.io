@@ -52,6 +52,9 @@ $side: 15px;
       top: 25em;
       left: 4em;
 
+      
+      
+
       .circle {  
         display: flex;
         justify-content: center;
@@ -65,30 +68,41 @@ $side: 15px;
         margin-right: 0.5em;
   
           .circle-number {
+            padding-top: 0.4em;
             font-family: 'Loos';
-            font-size: 4em;
+            font-size: 3.5em;
         }
       }
+
       .circle.for-wide {
         height: 4.5em;
         width: 14em;
         max-height: 4.5em;
         max-width: 4.5em;
       }
+      
       .up-for-1 {
-      margin-top: 20em;
-    }
+        margin-top: 20em;
+      }
   
-    .up-for-2 {
-      margin-top: 17em;
-    }
-  
-    .up-for-3 {
-      margin-top: 13em;
-    }
+      // .up-for-2 {
+      //   margin-top: 17em;
+      // }
+    
+      .up-for-3 {
+        margin-top: 13em;
+      }
     }
  
   }
+
+  .one.up-for-2 {
+    display: flex;
+    position: absolute;
+    z-index: 33;
+    top: 22em; 
+  }
+  
 }
 
 @keyframes side {
