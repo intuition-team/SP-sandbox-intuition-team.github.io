@@ -94,36 +94,36 @@
 .brand-gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 8vw);
-    grid-gap: 0.7em;
+    grid-template-rows: repeat(3, 12vw);
     justify-items: start;
     align-items: center;
 
         img {
             width: 7em;
-            height: 4em;
+            height: 4.4em;
             object-fit: contain;
         }
 
-        
 
-        .big-logo{
+        .smallest-logo {
 
             img {
-                height: 8em;
                 
-            }
-        }
-        
-        .small-logo{ 
-
-            img {
                 height: 4.5em;
             }
         }
+
+        .bike-ny {
+
+            img {           
+                width: 5.5em;
+                height: 4.5em;
+            }
+        }
+    }
         
 
-    }
+    
 
 
     
