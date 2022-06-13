@@ -30,7 +30,19 @@
     margin: 0;
   }
 
-  
+  h4 {
+
+    @media #{$ids__mobile} {
+      font-size: 1.4em;
+    } 
+  }
+
+  p {
+
+    @media #{$ids__mobile} {
+      font-size: 1.4em;
+    } 
+  }
 
   a {
     transition: color 0.8s ease, background-color 0.8s ease,
@@ -90,7 +102,12 @@
 
   }
 
+  a {
 
+    @media #{$ids__mobile} {
+      font-size: 1.2em;
+  } 
+  }
 
 }
 

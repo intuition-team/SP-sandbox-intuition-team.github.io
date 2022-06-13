@@ -4,10 +4,16 @@
   
     @media #{$ids__mobile} {
       max-width: 13.5em;
+      flex-direction: column;
     } 
     .app_badge {
       margin-right: .5em;
       width: 9em;
+
+      @media #{$ids__mobile} {
+        width: 13.5em;
+        margin-top: .5em;
+      } 
       
       a {
         img {

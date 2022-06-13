@@ -1,18 +1,25 @@
   
 .table {
-    border: 0.14em solid rgba(var(--ids__text-RGB), 1);
-    max-width: 43em;  
-
+    border: 0.20em solid rgba(var(--ids__text-RGB), 1);
+    max-width: 43em; 
+    
+    @media #{$ids__mobile} {
+        max-width: 32em;
+    }
     .table-title {
-    font-family: monospace;
-    border-bottom: 0.07em solid rgba(var(--ids__text-RGB), 1); 
-    padding: 0.3em 3em 0.3em 0.4em;
-    font-weight: 600;
+        font-family: 'Loos';
+        border-bottom: 0.1em solid rgba(var(--ids__text-RGB), 1); 
+        padding: 0.3em 3em 0.3em 0.4em;
+        font-weight: 600;
     }
  }
 
 .table-body {
      display: flex;
+
+     @media #{$ids__mobile} {
+         flex-direction: column-reverse;
+     }
  }
 
  
@@ -21,7 +28,7 @@
     min-width: 20em;
 
     .cell {
-        border-bottom: 0.14em solid rgba(var(--ids__text-RGB), 1);  
+        border-bottom: 0.20em solid rgba(var(--ids__text-RGB), 1);  
         padding: 0.6em 0 0.1em 0.7em;
         font-weight: 500;
 
@@ -36,7 +43,7 @@
         line-height: 0.7em;
         letter-spacing: 0.02em;
         font-size: 1.3em;
-        border-bottom: 0.11em solid rgba(var(--ids__text-RGB), 1); 
+        border-bottom: 0.18em solid rgba(var(--ids__text-RGB), 1); 
 
 
         mark {
@@ -50,10 +57,13 @@
 }
 
 .table-img {
-    border-left: 0.14em solid rgba(var(--ids__text-RGB), 1); 
-    // max-width: 19em; 
+    border-left: 0.20em solid rgba(var(--ids__text-RGB), 1); 
 
-    
+    @media #{$ids__mobile} {
+        border-left: none;
+        border-bottom: 0.20em solid rgba(var(--ids__text-RGB), 1); 
+        padding: 4em;
+    }
 }
 
 

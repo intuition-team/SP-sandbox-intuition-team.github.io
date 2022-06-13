@@ -2,6 +2,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  position: relative;
   padding: 0.2em 0.5em 0.2em 0.5em;
   height: 5em;
 }
@@ -26,9 +27,15 @@ a.logo-container {
 
 }
 
+
 nav {
   display: flex;
   margin-top: 1em;
+
+  @media #{$ids__mobile} {
+    display: none;
+    flex-direction: column;
+  }
 
   .nav-item {
     
@@ -74,6 +81,12 @@ nav {
     transition: opacity 0.3s ease-out, transform 0.3s ease-out;
     padding: 2em .2em .7em .7em;
     transform: translateY(.2em);
+
+    @media #{$ids__mobile} {
+      display: flex;
+      left: -4em;
+      top: -.5em;
+    }
     
 
     .nav-item {
@@ -106,5 +119,115 @@ nav {
   
   &:hover {
     opacity: 1;    
+  }
+}
+
+
+//  mobile
+
+.nav-mobile {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  padding: 3em 0 0 2em;
+  width: 80%;
+  background-color: rgba(50, 50, 50, 1);
+  z-index: 100;
+  opacity: 0;
+  transition: opacity 0.5s ease; 
+
+    .close-button {
+      position: absolute;
+      font-weight: 400;
+      top: 0.1em;
+      right: 0.3em;
+      font-size: 2.8em;
+      line-height: 1;
+
+      a {
+        border-bottom: none;
+      
+        &:hover {
+          border-bottom: none;
+        }
+      }
+    }
+
+    @media #{$ids__mobile} {
+      display: flex;
+      flex-direction: column;
+      
+    }
+}
+
+.mobile-menu {
+    position: absolute;
+    z-index: 2;
+    right: 0.7em;
+    padding: 0.3em 0.7em 0.5em 0.2em;
+    transition-duration: 0.1s;
+    transform: translateY(0);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+    pointer-events: auto;
+    background-color: rgba(var(--ids__background-RGB), 1);
+    min-width: 9em;
+    border-radius: .3em;
+    box-shadow: 0 .2em 3em 0 rgba(var(--ids__text-RGB), .1);
+
+  @media #{$ids__mobile} {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .mobile-nav-item {
+    padding: 0.55em 0.5em;
+
+    a {
+      border-bottom: none;
+      
+      &:hover {
+        border-bottom: none;
+      }
+    }
+  }
+}
+    
+
+.burger {
+  position: absolute;
+  top: 0.5em;
+  right: 1em;
+  font-weight: 400;
+  
+  
+  span {
+    font-size: 5em;
+    position: absolute;
+    right: 0.1em;
+    top: -0.35em;
+
+  }
+
+  display: none;
+
+  @media #{$ids__mobile} {
+    display: block;
+  }
+
+  &:hover {
+    opacity: 0.9;
+    border-bottom: 0;
+  }
+}
+
+a.burger {
+  border-bottom: none;
+  
+  
+  &:hover {
+    border-bottom: 0;
   }
 }

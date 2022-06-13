@@ -2,7 +2,19 @@
 .safety-page {
     a {
         font-weight: 600;
+
+        @media #{$ids__mobile} {
+            font-size: 1em;
+        }
     }
+
+    li {
+
+        @media #{$ids__mobile} {
+            font-size: 1.12em;
+        }
+    }
+
 }
 
 .nav-safety {
@@ -11,20 +23,41 @@
     padding: 0.4em 0.4em;
     border-radius: 0.2em;
 
+    @media #{$ids__mobile} {
+        flex-direction: column;
+        padding: 1em 3em 1em 0.4em;
+    }
+
     .nav-block {
         margin-right: 0.7em;
 
+        @media #{$ids__mobile} {
+            margin-top: 1.3em;
+        }
+
         a {
             border-bottom: none;
+
+            @media #{$ids__mobile} {
+                font-size: 1.3em;
+            }
         }
 
         &:first-of-type {
             padding-left: 1.2em;
-
+            
+            @media #{$ids__mobile} {
+                margin-top: 0;
+                padding-left: 0;
+            }
         }
 
         &:last-of-type {
             padding-right: 0.5em;
+
+            @media #{$ids__mobile} {
+                padding-right: 0;
+            }
 
         }
     }
@@ -39,11 +72,12 @@
     }
 }
 
-#safe-riders {   
+.content-cntainer {
+    display: flex;
+    justify-content: space-between;
 
-    .safe-riders-content {
-        display: flex;
-        justify-content: space-between;
+    @media #{$ids__mobile} {
+        flex-direction: column;
     }
 
     figure {
@@ -51,25 +85,21 @@
     }
 
 }
-    
-#safe-streets {
-    
-    .safe-streets-content {
-        display: flex;
-        justify-content: space-between;
-    }
 
+
+
+#safe-parking {
+  
     figure {
-        max-width: 30em;
+
+        @media #{$ids__mobile} {
+            max-width: 15em;
+        }
     }
 }
 
 #safe-vehicles {
 
-    .safe-vehicles-content {
-        display: flex;
-        justify-content: space-between;
-    }
 
     img {
         min-width: 27em;
@@ -97,6 +127,10 @@
     grid-template-rows: repeat(3, 12vw);
     justify-items: start;
     align-items: center;
+
+    @media #{$ids__mobile} {
+        grid-template-rows: repeat(3, 26vw);
+    }
 
         img {
             width: 7em;

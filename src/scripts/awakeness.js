@@ -26,3 +26,4 @@ const ready = function() {
 };
 
 $(document).ready(ready);
+
