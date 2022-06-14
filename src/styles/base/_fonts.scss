@@ -1,3 +1,7 @@
 @import "base/mixins";
 
-@include font-face('Loos', 'Loos Latin, Cyrillic ExtraWide-Medium-Web', 500);
+// @include font-face('Loos', 'Loos Latin, Cyrillic ExtraWide-Medium-Web', 500);
+@include font-face('TT', 'TT Travels Trial Black', 500);
+@include font-face('TT Bold', 'TT Travels Trial Bold', 500);
+@include font-face('TT DemiBold', 'TT Travels Trial DemiBold', 500);
+@include font-face('TT ExtraBold', 'TT Travels Trial ExtraBold', 500);
