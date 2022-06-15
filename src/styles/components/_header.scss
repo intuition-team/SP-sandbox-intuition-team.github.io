@@ -138,28 +138,32 @@ nav {
   opacity: 0;
   transition: opacity 0.5s ease; 
 
+    @media #{$ids__mobile} {
+      display: flex;
+      flex-direction: column;
+      max-width: 11.6em;
+      
+    }
+
   .close-button {
     position: absolute;
-    font-weight: 400;
     top: 0.1em;
-    right: 0.3em;
-    font-size: 2.8em;
-    line-height: 1;
+    right: 0.7em;
+    font-size: 2.5em;
+    font-weight: 300;
+    cursor: pointer;
 
     a {
       border-bottom: none;
     
       &:hover {
+        color: white;
         border-bottom: none;
       }
     }
   }
 
-  @media #{$ids__mobile} {
-    display: flex;
-    flex-direction: column;
-    
-  }
+  
 
   &.visible {
     right: 0;
@@ -172,6 +176,7 @@ nav {
     z-index: 2;
     right: 0.7em;
     padding: 0.3em 0.7em 0.5em 0.2em;
+    margin-top: 2em;
     transition-duration: 0.1s;
     transform: translateY(0);
     transition: opacity 0.3s ease-out, transform 0.3s ease-out;
@@ -203,17 +208,14 @@ nav {
 
 .burger {
   position: absolute;
-  top: 0.5em;
-  right: 1em;
-  font-weight: 400;
+  top: -0.01em;
+  right: 3em;
   
   
   span {
-    font-size: 5em;
+    font-size: 3em;
     position: absolute;
-    right: 0.1em;
-    top: -0.35em;
-
+    font-weight: 300;
   }
 
   display: none;
